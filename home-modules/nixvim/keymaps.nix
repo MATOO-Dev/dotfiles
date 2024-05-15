@@ -95,13 +95,13 @@
       }
       {
         action = ":bprev<CR>";
-        key = "<leader>bp";
+        key = "<C-A-h>";
         mode = "n";
         options.silent = true;
       }
       {
         action = ":bnext<CR>";
-        key = "<leader>bn";
+        key = "<C-A-l>";
         mode = "n";
         options.silent = true;
       }
