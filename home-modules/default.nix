@@ -3,7 +3,7 @@
   imports = [
     ./shells.nix
     ./starship.nix
-    ./nixvim/default.nix
+    ./nixvim/nixvim.nix
     ./lazygit.nix
     ./kitty.nix
   ];
