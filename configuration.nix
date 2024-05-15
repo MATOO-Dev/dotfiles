@@ -42,6 +42,7 @@
 		dotnet-runtime
 		dotnet-sdk
 		dunst
+        firefox
 		gcc
 		git
 		git-lfs
