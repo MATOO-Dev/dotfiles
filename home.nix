@@ -53,6 +53,7 @@
 				discord
 				drawio
                 firefox
+                fzf
 				gcolor3
 				gedit
 				gimp
