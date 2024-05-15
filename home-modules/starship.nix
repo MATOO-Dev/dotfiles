@@ -59,14 +59,14 @@ in
 
         git_status = {
             disabled = false;
-            ahead = " 󰁝\${count}";
-            behind = " 󰁅\${count}";
-            untracked = " ?\${count}";
-            modified = " !\${count}";
-            staged = " +\${count}";
-            renamed = " 󰄾\${count}";
-            deleted = " x\${count}";
-            format = "[$all_status$ahead$behind ](bg:#${theme.base0C} fg:#${theme.base01})";
+            ahead = " 󰁝\${count} ";
+            behind = " 󰁅\${count} ";
+            untracked = " ?\${count} ";
+            modified = " !\${count} ";
+            staged = " +\${count} ";
+            renamed = " 󰄾\${count} ";
+            deleted = " x\${count} ";
+            format = "[$all_status$ahead$behind](bg:#${theme.base0C} fg:#${theme.base01})";
         };
 
         time = {
