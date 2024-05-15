@@ -1,18 +1,20 @@
-config:
+{ config, ... }:
 {
-  enable = true;
+  programs.nixvim.plugins.lualine = {
+    enable = true;
 
-  componentSeparators = {
-    left = "|";
-    right = "|";
-  };
+    componentSeparators = {
+      left = "|";
+      right = "|";
+    };
 
-  sections = {
-    lualine_a = [ "mode" ];
-    lualine_b = [ "buffers" ];
-    lualine_c = [ "" ];
-    lualine_x = [ "" ];
-    lualine_y = [ "filetype" ];
-    lualine_z = [ "location" ];
+    sections = {
+      lualine_a = [ "mode" ];
+      lualine_b = [ "buffers" ];
+      lualine_c = [ "" ];
+      lualine_x = [ "" ];
+      lualine_y = [ "filetype" ];
+      lualine_z = [ "location" ];
+    };
   };
 }

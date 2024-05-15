@@ -1,5 +1,13 @@
-config:
+{ config, ... }:
 {
+  imports = [
+  # ---------- LSP integration ---------- #
+  ./lsp.nix
+  # ---------- Status bar ---------- #
+  ./lualine.nix
+];
+
+programs.nixvim.plugins = {
   # ---------- Automatically close parentheses etc. ---------- #
   autoclose.enable = true;
 
@@ -60,13 +68,6 @@ config:
 
   # ---------- Quickly jump around text (like vimium) ---------- #
   leap.enable = true;
-
-  # ---------- LSP integration ---------- #
-  lsp = import ./lsp.nix;
-
-  # ---------- Status bar ---------- #
-  #lualine = import ./lualine.nix {specialArgs = {inherit config;};};
-  lualine = import ./lualine.nix config;
 
   # ---------- Vim-Nix ---------- #
   nix.enable = true;
@@ -133,4 +134,5 @@ config:
 
   # ---------- Undo trees ---------- #
   undotree.enable = true;
+};
 }
