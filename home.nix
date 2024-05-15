@@ -2,11 +2,9 @@
 
 {
 	imports = [
-        ./home-modules/shells.nix
         inputs.nix-colors.homeManagerModules.default
         inputs.nixvim.homeManagerModules.nixvim
-        ././home-modules/nixvim/nixvim.nix
-        #inputs.stylix.homeManagerModules.stylix
+        ./home-modules/default.nix
 	];
 
     colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
