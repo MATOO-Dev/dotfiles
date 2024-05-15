@@ -43,7 +43,7 @@
         ];
 
         extraConfigLua = ''
-          require("treesj").setup({use_default_keymap = false})
+          require("treesj").setup({use_default_keymap = false, max_join_length = 500})
         '';
     };
 }

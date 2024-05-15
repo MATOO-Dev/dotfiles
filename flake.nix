@@ -18,7 +18,7 @@
 				configDirectory = "~/dotfiles";
 			};
 			systemSettings = {
-                profile = "laptop";
+                profile = "desktop";
 				timezone = "Europe/Berlin";
 				locale = "en_US.UTF-8";
 				specialLocale = "de_DE.UTF-8";
