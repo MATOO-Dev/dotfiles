@@ -1,8 +1,11 @@
 { config, pkgs, ... }:
-#let
-  #theme = config.colorScheme.palette;
-#in
 {
+  imports = [
+    ./keymaps.nix
+    ./options.nix
+    ./plugins.nix
+  ];
+
   programs.nixvim = {
         enable = true;
 
@@ -33,11 +36,6 @@
         };
 
 		globals = { mapleader = " "; };
-
-		keymaps = import ./keymaps.nix;
-		opts = import ./options.nix;
-        plugins = import ./plugins.nix config;
-        #imports =  [ ./plugins.nix ];
 
         extraPlugins = with pkgs.vimPlugins; [
             vim-move

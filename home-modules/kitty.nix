@@ -9,7 +9,7 @@
 
     font = {
       name = "CaskaydiaCoveNF-Mono";
-      size = 13.5;
+      size = 20;
     };
 
     keybindings = {
@@ -23,6 +23,8 @@
       scrollback_lines = 1000;
       enable_audio_bell = "no";
       remember_window_size = "yes";
+      cursor_shape = "block";
+      shell_integration = "no_cursor";
 
       foreground = "#${theme.base05}";
       background = "#${theme.base00}";
