@@ -73,6 +73,7 @@
 				mission-center
 				neofetch
                 netcat-gnu
+                numbat
 				obsidian
 				pavucontrol
 				prismlauncher
