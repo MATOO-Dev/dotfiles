@@ -11,5 +11,6 @@
     wrap = false;
     foldmethod = "expr";
     foldlevel = 99;
+    showmode = false;
   };
 }
