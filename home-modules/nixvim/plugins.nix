@@ -17,8 +17,12 @@ programs.nixvim.plugins = {
     autoEnableSources = true;
     settings.sources = [
       {name = "nvim_lsp";}
+      {name = "cmp_nvim_lsp";}
       {name = "path";}
       {name = "buffer";}
+      {name = "luasnip";}
+      {name = "cmp_luasnip";}
+      {name = "friendly-snippets";}
     ];
     settings.mapping = {
       "<Tab>" = "cmp.mapping.confirm({select = true})";
@@ -68,6 +72,11 @@ programs.nixvim.plugins = {
 
   # ---------- Quickly jump around text (like vimium) ---------- #
   leap.enable = true;
+
+  # ---------- Snippets --------- #
+  luasnip.enable = true;
+  cmp_luasnip.enable = true;
+  friendly-snippets.enable = true;
 
   # ---------- Vim-Nix ---------- #
   nix.enable = true;

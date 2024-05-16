@@ -12,4 +12,5 @@
       typst-lsp.enable = true;
     };
   };
+  programs.nixvim.plugins.cmp-nvim-lsp.enable = true;
 }
