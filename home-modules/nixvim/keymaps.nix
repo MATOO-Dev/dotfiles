@@ -111,5 +111,29 @@
         mode = "n";
         options.silent = true;
       }
+      {
+        action = ":lua require('harpoon.mark').set_current_at(1) end";
+        key = "<leader>1";
+        mode = "n";
+        options.silent = true;
+      }
+      {
+        action = ":lua require('harpoon.mark').set_current_at(2) end";
+        key = "<leader>2";
+        mode = "n";
+        options.silent = true;
+      }
+      {
+        action = ":lua require('harpoon.mark').set_current_at(3) end";
+        key = "<leader>3";
+        mode = "n";
+        options.silent = true;
+      }
+      {
+        action = ":lua require('harpoon.mark').set_current_at(4) end";
+        key = "<leader>4";
+        mode = "n";
+        options.silent = true;
+      }
     ];
   }
