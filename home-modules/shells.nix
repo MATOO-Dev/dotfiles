@@ -1,14 +1,15 @@
 { pkgs, ... }:
 let
   aliases = {
-      nv = "nvim";
-      open = "xdg-open";
-      buildHome = "/home/matoo/dotfiles/scripts/buildHome.sh";
-      buildSystem = "/home/matoo/dotfiles/scripts/buildSystem.sh";
-      buildAll = "/home/matoo/dotfiles/scripts/buildAll.sh";
-      updateFlake = "/home/matoo/dotfiles/scripts/updateFlake.sh";
-      upgradeAll = "/home/matoo/dotfiles/scripts/upgradeAll.sh";
-      autoclean = "/home/matoo/dotfiles/scripts/autoclean.sh";
+    nv = "nvim";
+    open = "xdg-open";
+    buildHome = "/home/matoo/dotfiles/scripts/buildHome.sh";
+    buildSystem = "/home/matoo/dotfiles/scripts/buildSystem.sh";
+    buildAll = "/home/matoo/dotfiles/scripts/buildAll.sh";
+    updateFlake = "/home/matoo/dotfiles/scripts/updateFlake.sh";
+    upgradeAll = "/home/matoo/dotfiles/scripts/upgradeAll.sh";
+    autoclean = "/home/matoo/dotfiles/scripts/autoclean.sh";
+    ls = "ls --color";
   };
 in
 {
@@ -19,7 +20,8 @@ in
     starship
     zoxide
     zsh
-    zsh-powerlevel10k
+    zsh-fzf-tab
+    zsh-fzf-history-search
   ];
 
   programs.bash = {
@@ -31,21 +33,24 @@ in
   programs.zsh = {
     enable = true;
     shellAliases = aliases;
+    enableCompletion = true;
+    syntaxHighlighting.enable = true;
+    history = {
+      size = 5000;
+      share = true;
+      ignoreDups = true;
+      ignoreAllDups = true;
+    };
+    historySubstringSearch.enable = true;
     initExtra = ''
-    autoload -Uz compinit && compinit
-    zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+      zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+      zstyle ':completion:*' list-colors "''${(s.:.)LS_COLORS}"
     '';
-    #source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme;
-    #source /home/matoo/dotfiles/imports/p10k.zsh;
     plugins = [
       {
         name = "zsh-autosuggestions";
-        src = pkgs.fetchFromGitHub {
-          owner = "zsh-users";
-          repo = "zsh-autosuggestions";
-          rev = "v0.4.0";
-          sha256 = "0z6i9wjjklb4lvr7zjhbphibsyx51psv50gm07mbb0kj9058j6kc";
-        };
+        src = pkgs.zsh-autosuggestions;
+        file = "share/zsh-autosuggestions/zsh-autosuggestions.zsh";
       }
     ];
   };
@@ -56,4 +61,6 @@ in
     enableZshIntegration = true;
     options = [ "--cmd j" ];
   };
+
+  programs.fzf.enableZshIntegration = true;
 }

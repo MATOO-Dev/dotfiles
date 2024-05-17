@@ -11,6 +11,11 @@
       nil_ls.enable = true;
       typst-lsp.enable = true;
     };
+    preConfig = ''
+      vim.diagnostic.config {
+        update_in_insert = true
+      }
+    '';
   };
   programs.nixvim.plugins.cmp-nvim-lsp.enable = true;
 }

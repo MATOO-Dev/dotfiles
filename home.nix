@@ -88,6 +88,7 @@
     steam
     thunderbird
     tldr
+    tree
     typst
     ungoogled-chromium
     #vintagestory
