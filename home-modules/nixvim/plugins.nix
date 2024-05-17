@@ -53,6 +53,9 @@
     # ---------- Fuzzy finder ---------- #
     fzf-lua.enable = true;
 
+    # ---------- Gitignore ---------- #
+    gitignore.enable = true;
+
     # ---------- Godot ---------- #
     godot.enable = true;
 
@@ -69,10 +72,10 @@
         navNext = "<C-nn>";
         navPrev = "<C-np>";
         navFile = {
-          "1" = "<C-h>";
-          "2" = "<C-j>";
-          "3" = "<C-k>";
-          "4" = "<C-l>";
+          "1" = "<C-1>";
+          "2" = "<C-2>";
+          "3" = "<C-3>";
+          "4" = "<C-4>";
         };
       };
     };
@@ -130,6 +133,9 @@
         "<leader>gf" = "git_files";
       };
     };
+
+    # ---------- Seamlessly navigate to tmux ---------- #
+    tmux-navigator.enable = true;
 
     # ---------- Syntax highlighting ---------- #
     treesitter = {

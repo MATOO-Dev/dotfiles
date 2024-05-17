@@ -6,5 +6,6 @@
     ./nixvim/nixvim.nix
     ./lazygit.nix
     ./kitty.nix
+    ./tmux.nix
   ];
 }
