@@ -1,7 +1,7 @@
 { config, ... }:
 {
   programs.nixvim.plugins.notify = {
-    enable = true;
+    enable = false;
     fps = 60;
     timeout = 300;
     render = "default";

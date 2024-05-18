@@ -7,5 +7,6 @@
     ./lazygit.nix
     ./kitty.nix
     ./tmux.nix
+    ./hyprland.nix
   ];
 }

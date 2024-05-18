@@ -5,7 +5,6 @@
   ...
 }:
 {
-
   environment.variables.hostname = hostname;
 
   # allow EOL electron version
@@ -59,7 +58,6 @@
       gnome.gnome-terminal
       gnupg
       home-manager
-      kitty
       lf
       libnotify
       lua-language-server
@@ -67,13 +65,11 @@
       nil
       pass
       ripgrep
-      rofi-wayland
       swww
       syncthing
       tmux
       unzip
       vim
-      waybar
       wine
       winetricks
       zellij

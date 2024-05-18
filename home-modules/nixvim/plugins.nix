@@ -93,7 +93,7 @@
 
     # ---------- Floating cmdline ---------- #
     noice = {
-      enable = true;
+      enable = false;
       presets = {
         bottom_search = true;
         long_message_to_split = true;
