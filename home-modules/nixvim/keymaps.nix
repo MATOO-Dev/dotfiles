@@ -135,5 +135,17 @@
       mode = "n";
       options.silent = true;
     }
+    {
+      action = "o<Esc>";
+      key = "<CR>";
+      mode = "n";
+      options.silent = true;
+    }
+    {
+      action = "O<Esc>";
+      key = "<S-CR>";
+      mode = "n";
+      options.silent = true;
+    }
   ];
 }

@@ -130,6 +130,7 @@
   home.sessionVariables = {
     # EDITOR = "emacs";
     EDITOR = "nvim";
+    MOZ_ENABLE_WAYLAND = 1;
   };
 
   # Let Home Manager install and manage itself.
