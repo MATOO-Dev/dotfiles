@@ -45,7 +45,6 @@
     {
       homeConfigurations = {
         user = inputs.home-manager.lib.homeManagerConfiguration {
-          #inherit pkgs-unstable;
           pkgs = pkgs-unstable;
           modules = [ ./home.nix ];
           extraSpecialArgs = {
@@ -59,20 +58,7 @@
       nixosConfigurations = {
         system = inputs.nixpkgs.lib.nixosSystem {
           system = systemSettings.systemType;
-          modules = [
-            (
-              { ... }:
-              {
-                imports = [
-                  ./configuration.nix
-                  ./system-modules/shared/shared-modules.nix
-                  (
-                    ./system-modules + ("/" + systemSettings.profile) + ("/" + systemSettings.profile + "-modules.nix")
-                  )
-                ];
-              }
-            )
-          ];
+          modules = [ ./configuration.nix ];
           specialArgs = {
             hostname = userSettings.username + "-" + systemSettings.profile;
             inherit inputs;
