@@ -3,6 +3,7 @@
   pkgs-unstable,
   hostname,
   systemSettings,
+  inputs,
   ...
 }:
 {
@@ -11,9 +12,11 @@
     (
       ./system-modules + ("/" + systemSettings.profile) + ("/" + systemSettings.profile + "-modules.nix")
     )
+    inputs.stylix.nixosModules.stylix
   ];
 
   environment.variables.hostname = hostname;
+  stylix.base16Scheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
 
   # allow EOL electron version
   nixpkgs.config.permittedInsecurePackages = [ "electron-25.9.0" ];
