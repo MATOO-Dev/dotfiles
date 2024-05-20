@@ -2,9 +2,17 @@
   pkgs,
   pkgs-unstable,
   hostname,
+  systemSettings,
   ...
 }:
 {
+  imports = [
+    ./system-modules/shared/shared-modules.nix
+    (
+      ./system-modules + ("/" + systemSettings.profile) + ("/" + systemSettings.profile + "-modules.nix")
+    )
+  ];
+
   environment.variables.hostname = hostname;
 
   # allow EOL electron version
