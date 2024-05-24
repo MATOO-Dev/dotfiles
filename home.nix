@@ -10,16 +10,15 @@
     inputs.nix-colors.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
     ./home-modules/default.nix
+    # inputs.stylix.homeManagerModules.stylix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
-  #colorScheme = inputs.nix-colors.colorSchemes.gruvbox-light-medium;
-  #programs.nixvim = import ././home-modules/nixvim/nixvim.nix;
-  #stylix = {
-  #image = ./wallpaperNMS.jpg;
-  #polarity = "dark";
-  #base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
-  #};
+  # stylix = {
+  #   image = ./wallpaperNMS.jpg;
+  #   polarity = "dark";
+  #   base16Scheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
+  # };
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -58,6 +57,7 @@
     discord
     drawio
     firefox
+    flatpak
     fzf
     gcolor3
     gedit
@@ -84,6 +84,8 @@
     prismlauncher
     protonmail-bridge
     protonup-qt
+    protonvpn-cli
+    protonvpn-gui
     scrcpy
     steam
     thunderbird
