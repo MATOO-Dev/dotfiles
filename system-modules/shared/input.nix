@@ -1,13 +1,13 @@
 { lib, config, ... }:
 {
-	services.xserver = {
-		layout = "de";
-		xkbVariant = "";
-	};
+  services.xserver.xkb = {
+    layout = "de";
+    variant = "";
+  };
 
-# Configure console keymap
-	console.keyMap = "de";
+  # Configure console keymap
+  console.keyMap = "de";
 
-# Enable touchpad support (enabled default in most desktopManager).
-# services.xserver.libinput.enable = true;
+  # Enable touchpad support (enabled default in most desktopManager).
+  # services.xserver.libinput.enable = true;
 }
