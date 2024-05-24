@@ -1,6 +1,6 @@
 {
   pkgs,
-  pkgs-unstable,
+  # pkgs-unstable,
   hostname,
   systemSettings,
   inputs,
@@ -53,8 +53,9 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages =
-    (with pkgs-unstable; [
+  environment.systemPackages = (
+    with pkgs;
+    [
       bashInteractive
       ffmpeg
       # ccls
@@ -90,15 +91,16 @@
       zsh
       zsh-autosuggestions
       zsh-powerlevel10k
-    ])
-    ++ (with pkgs-unstable; [
+      # ])
+      # ++ (with pkgs-unstable; [
       nh
       openvpn
       protonvpn-cli_2
       protonvpn-gui
       wireguard-tools
       zapzap
-    ]);
+    ]
+  );
 
   system.stateVersion = "23.11"; # Did you read the comment?
 }

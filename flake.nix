@@ -33,19 +33,11 @@
           allowUnfreePredicate = (_: true);
         };
       };
-      pkgs-unstable = import inputs.nixpkgs-unstable {
-        system = systemSettings.systemType;
-        hostPlatform = systemSettings.systemType;
-        config = {
-          allowUnfree = true;
-          allowUnfreePredicate = (_: true);
-        };
-      };
     in
     {
       homeConfigurations = {
         user = inputs.home-manager.lib.homeManagerConfiguration {
-          pkgs = pkgs-unstable;
+          inherit pkgs;
           modules = [ ./home.nix ];
           extraSpecialArgs = {
             inherit inputs;
@@ -62,7 +54,6 @@
           specialArgs = {
             hostname = userSettings.username + "-" + systemSettings.profile;
             inherit inputs;
-            inherit pkgs-unstable;
             inherit systemSettings;
             inherit userSettings;
           };
@@ -71,15 +62,14 @@
     };
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim = {
       url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-colors.url = "github:misterio77/nix-colors";
     stylix.url = "github:danth/stylix";
