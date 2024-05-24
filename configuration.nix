@@ -12,11 +12,13 @@
     (
       ./system-modules + ("/" + systemSettings.profile) + ("/" + systemSettings.profile + "-modules.nix")
     )
-    inputs.stylix.nixosModules.stylix
+    # inputs.stylix.nixosModules.stylix
   ];
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   environment.variables.hostname = hostname;
-  stylix.base16Scheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
+  #stylix.base16Scheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
 
   # allow EOL electron version
   nixpkgs.config.permittedInsecurePackages = [ "electron-25.9.0" ];
