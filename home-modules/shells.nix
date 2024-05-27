@@ -13,7 +13,7 @@ let
   };
 in
 {
-  imports = [ ./starship.nix ];
+  # imports = [ ./starshipV2.nix ];
 
   home.packages = with pkgs; [
     bashInteractive
