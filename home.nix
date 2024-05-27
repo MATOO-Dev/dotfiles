@@ -52,6 +52,7 @@
     alacritty
     anki
     appeditor
+    betterdiscordctl
     blender
     denaro
     discord
@@ -93,6 +94,7 @@
     tree
     typst
     ungoogled-chromium
+    vesktop
     #vintagestory
     vlc
     vscodium
