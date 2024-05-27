@@ -8,6 +8,7 @@
     keyMode = "vi";
     mouse = true;
     baseIndex = 1;
+    escapeTime = 5;
 
     plugins = with pkgs.tmuxPlugins; [
       vim-tmux-navigator

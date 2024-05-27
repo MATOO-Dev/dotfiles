@@ -4,6 +4,7 @@
     enable = true;
     shellIntegration.enableBashIntegration = true;
     shellIntegration.enableZshIntegration = true;
+    shellIntegration.mode = "no-cursor";
 
     #theme = "Gruvbox Material Dark Medium";
 
@@ -27,7 +28,10 @@
         enable_audio_bell = "no";
         remember_window_size = "yes";
         cursor_shape = "block";
-        shell_integration = "no-cursor";
+        confirm_os_window_close = 1;
+        sync_to_monitor = "yes";
+        editor = "nvim";
+        wayland_titlebar_color = "system";
 
         foreground = "#${theme.base05}";
         background = "#${theme.base00}";
