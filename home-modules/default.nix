@@ -8,5 +8,6 @@
     ./kitty.nix
     ./tmux.nix
     ./hyprland.nix
+    ./i3.nix
   ];
 }

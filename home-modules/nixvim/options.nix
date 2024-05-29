@@ -12,5 +12,9 @@
     foldmethod = "expr";
     foldlevel = 99;
     showmode = false;
+    guicursor = [
+      "a:block"
+      "a:blinkwait700-blinkoff400-blinkon250"
+    ];
   };
 }
