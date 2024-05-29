@@ -10,6 +10,12 @@
   # Enable Hyprland
   programs.hyprland.enable = true;
 
+  # Enable i3wm
+  services.xserver.windowManager.i3.enable = true;
+
+  # Enable sway
+  programs.sway.enable = true;
+
   # Enable xdg desktop portal (for hyprland)
   #  xdg.portal.enable = true;
   #  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk];
