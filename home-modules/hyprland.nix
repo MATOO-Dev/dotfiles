@@ -20,6 +20,7 @@
           ", Print, exec, grimblast copy area"
           "$mod, R, exec, rofi -show drun"
           "$mod, Q, exec, kitty"
+          "$mod, M, exit"
         ]
         ++ (
           # workspaces
