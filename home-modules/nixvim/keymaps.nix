@@ -147,5 +147,11 @@
       mode = "n";
       options.silent = true;
     }
+    {
+      action = "Gzz";
+      key = "G";
+      mode = "n";
+      options.silent = true;
+    }
   ];
 }
