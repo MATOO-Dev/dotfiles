@@ -97,6 +97,7 @@
     tree
     typst
     ungoogled-chromium
+    valgrind
     vesktop
     #vintagestory
     vlc
