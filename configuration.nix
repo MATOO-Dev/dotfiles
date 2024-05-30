@@ -72,6 +72,7 @@
       gnome.gnome-terminal
       gnupg
       home-manager
+      nix-ld
       lf
       libnotify
       lua-language-server
@@ -101,6 +102,11 @@
       zapzap
     ]
   );
+
+  programs.nix-ld = {
+    enable = true;
+    libraries = pkgs.steam-run.fhsenv.args.multiPkgs pkgs;
+  };
 
   system.stateVersion = "23.11"; # Did you read the comment?
 }

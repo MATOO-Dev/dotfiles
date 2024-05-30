@@ -10,7 +10,7 @@
 
     font = lib.mkDefault {
       name = "CaskaydiaCoveNF-Mono";
-      size = 20;
+      size = 16;
     };
 
     keybindings = {
