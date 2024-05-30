@@ -20,6 +20,9 @@
   #   base16Scheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
   # };
 
+  # Unstable branch, this disables the warning
+  home.enableNixpkgsReleaseCheck = false;
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "matoo";
