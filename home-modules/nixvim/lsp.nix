@@ -1,5 +1,6 @@
-{ ... }:
+{ pkgs, ... }:
 {
+  programs.nixvim.plugins.cmp-nvim-lsp.enable = true;
   programs.nixvim.plugins.lsp = {
     enable = true;
     servers = {
@@ -9,6 +10,11 @@
       java-language-server.enable = true;
       marksman.enable = true;
       nil_ls.enable = true;
+      rust-analyzer = {
+        enable = true;
+        installRustc = true;
+        installCargo = true;
+      };
       typst-lsp.enable = true;
     };
     preConfig = ''
@@ -17,5 +23,5 @@
       }
     '';
   };
-  programs.nixvim.plugins.cmp-nvim-lsp.enable = true;
+  programs.nixvim.extraPlugins = [ pkgs.vimPlugins.nvim-lspconfig ];
 }
