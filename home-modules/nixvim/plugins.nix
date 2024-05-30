@@ -1,6 +1,8 @@
 { ... }:
 {
   imports = [
+    # ---------- Debugger ---------- #
+    ./dap.nix
     # ---------- Autoformatting ---------- #
     ./formatting.nix
     # ---------- LSP integration ---------- #
@@ -83,6 +85,9 @@
     # ---------- Quickly jump around text (like vimium) ---------- #
     leap.enable = true;
 
+    # ---------- Additional linter ---------- #
+    lint.enable = true;
+
     # ---------- Snippets --------- #
     luasnip.enable = true;
     cmp_luasnip.enable = true;
@@ -141,6 +146,7 @@
     treesitter = {
       enable = true;
       folding = true;
+      indent = true;
     };
 
     # ---------- Error list ---------- #

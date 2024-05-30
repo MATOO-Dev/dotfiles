@@ -2,6 +2,7 @@
 let
   aliases = {
     nv = "nvim";
+    tma = "tmux a";
     open = "xdg-open";
     buildHome = "/home/matoo/dotfiles/scripts/buildHome.sh";
     buildSystem = "/home/matoo/dotfiles/scripts/buildSystem.sh";
