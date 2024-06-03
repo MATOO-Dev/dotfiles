@@ -55,6 +55,7 @@
     alacritty
     anki
     appeditor
+    audacity
     betterdiscordctl
     blender
     denaro
@@ -71,6 +72,7 @@
     gnome-extension-manager
     gnome.gnome-tweaks
     godot_4
+    heroic
     java-language-server
     jdk
     kitty
