@@ -56,6 +56,7 @@
     anki
     appeditor
     audacity
+    bazecor
     betterdiscordctl
     blender
     denaro
