@@ -28,13 +28,11 @@
           type = "gdb";
           program.__raw = ''
             function()
-            local path = vim.fn.input({
+            return vim.fn.input({
               prompt = 'Path to executable: ',
               default = vim.fn.getcwd() .. '/',
               completion = 'file',
             })
-
-            return (path and path ~= "") and path or require("dap").ABORT
             end
           '';
         }
