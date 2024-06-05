@@ -87,6 +87,7 @@
     netcat-gnu
     numbat
     obsidian
+    pandoc
     pavucontrol
     prismlauncher
     protonmail-bridge
