@@ -14,7 +14,7 @@
   services.xserver.windowManager.i3.enable = true;
 
   # Enable sway
-  programs.sway.enable = true;
+  programs.sway.enable = false;
 
   # Enable xdg desktop portal (for hyprland)
   #  xdg.portal.enable = true;
