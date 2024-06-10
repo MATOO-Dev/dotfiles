@@ -9,7 +9,7 @@
       gdscript.enable = true;
       java-language-server.enable = true;
       marksman.enable = true;
-      nil_ls.enable = true;
+      nil-ls.enable = true;
       rust-analyzer = {
         enable = true;
         installRustc = true;

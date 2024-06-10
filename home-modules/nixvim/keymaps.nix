@@ -45,11 +45,10 @@
       options.silent = true;
     }
     {
-      action = "require('treesj').toggle";
+      action = ":lua require('treesj').toggle<CR>";
       key = "<leader>tj";
       mode = "n";
       options.silent = true;
-      lua = true;
     }
     {
       action = ":TroubleToggle<CR>";
