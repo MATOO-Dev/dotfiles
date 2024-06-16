@@ -8,6 +8,8 @@
       csharp-ls.enable = true;
       gdscript.enable = true;
       java-language-server.enable = true;
+      java-language-server.cmd = [ "jdtls -data ././jdt-data" ];
+      java-language-server.package = pkgs."jdt-language-server";
       marksman.enable = true;
       nil-ls.enable = true;
       rust-analyzer = {
@@ -23,5 +25,11 @@
       }
     '';
   };
+  programs.nixvim.plugins.nvim-jdtls = {
+    enable = true;
+    settings.java.grade.enabled = true;
+    data = "./.jdt-data";
+  };
+  programs.nixvim.plugins.lspkind.enable = true;
   programs.nixvim.extraPlugins = [ pkgs.vimPlugins.nvim-lspconfig ];
 }

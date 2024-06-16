@@ -159,7 +159,10 @@
     };
 
     # ---------- Typst integration ---------- #
-    typst-vim.enable = true;
+    typst-vim = {
+      enable = true;
+      settings.conceal_math = true;
+    };
     # TODO: Add typst-preview.nvim
     # TODO: Add typst-conceal.vim
     # TODO: Add cord.vim
