@@ -58,7 +58,6 @@
     [
       bashInteractive
       ffmpeg
-      # ccls
       clang
       clang-tools
       dotnet-runtime
@@ -77,29 +76,28 @@
       libnotify
       lua-language-server
       neovim
+      nh
       nil
+      openvpn
       pass
+      protonvpn-cli_2
+      protonvpn-gui
       ripgrep
       swww
       syncthing
       tmux
       unzip
       vim
+      wget
       wine
       winetricks
+      wireguard-tools
+      zapzap
       zellij
       zoxide
       zsh
       zsh-autosuggestions
       zsh-powerlevel10k
-      # ])
-      # ++ (with pkgs-unstable; [
-      nh
-      openvpn
-      protonvpn-cli_2
-      protonvpn-gui
-      wireguard-tools
-      zapzap
     ]
   );
 
