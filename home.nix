@@ -73,6 +73,8 @@
     gnome-extension-manager
     gnome.gnome-tweaks
     godot_4
+    gpu-screen-recorder
+    gpu-screen-recorder-gtk
     heroic
     java-language-server
     jdk
@@ -91,6 +93,7 @@
     pavucontrol
     prismlauncher
     protonmail-bridge
+    protonmail-desktop
     protonup-qt
     protonvpn-cli
     protonvpn-gui
