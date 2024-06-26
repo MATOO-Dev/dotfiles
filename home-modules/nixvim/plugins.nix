@@ -1,6 +1,8 @@
 { ... }:
 {
   imports = [
+    # ---------- Screenshots ---------- #
+    ./codesnap.nix
     # ---------- Debugger ---------- #
     ./dap.nix
     # ---------- Autoformatting ---------- #

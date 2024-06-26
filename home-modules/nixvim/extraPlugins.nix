@@ -9,15 +9,6 @@
       ]
       ++ [
         (pkgs.vimUtils.buildVimPlugin {
-          name = "CodeSnap";
-          src = pkgs.fetchFromGitHub {
-            owner = "mistricky";
-            repo = "codesnap.nvim";
-            rev = "v1.3.1";
-            hash = "sha256-nS/bAWsBQ1L4M9437Yp6FdmHoogzalKlLIAXnRZyMp0=";
-          };
-        })
-        (pkgs.vimUtils.buildVimPlugin {
           name = "typst-preview.nvim";
           src = pkgs.fetchFromGitHub {
             owner = "chomosuke";
