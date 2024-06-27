@@ -99,6 +99,7 @@
     protonvpn-gui
     scrcpy
     steam
+    texliveFull
     thunderbird
     tldr
     tree
@@ -112,6 +113,7 @@
     wezterm
     wireshark
     xclip
+    xorg.xkill
     xournalpp
     yt-dlp
   ];

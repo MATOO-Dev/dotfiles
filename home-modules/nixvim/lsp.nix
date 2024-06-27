@@ -17,6 +17,7 @@
         installRustc = true;
         installCargo = true;
       };
+      texlab.enable = true;
       typst-lsp.enable = true;
     };
     preConfig = ''
