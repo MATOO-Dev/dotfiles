@@ -7,7 +7,7 @@
       clangd.enable = true;
       csharp-ls.enable = true;
       gdscript.enable = true;
-      java-language-server.enable = true;
+      java-language-server.enable = false;
       java-language-server.cmd = [ "jdtls -data ././jdt-data" ];
       java-language-server.package = pkgs."jdt-language-server";
       marksman.enable = true;
@@ -27,7 +27,7 @@
     '';
   };
   programs.nixvim.plugins.nvim-jdtls = {
-    enable = true;
+    enable = false;
     settings.java.grade.enabled = true;
     data = "./.jdt-data";
   };
