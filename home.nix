@@ -61,6 +61,7 @@
     blender
     denaro
     discord
+    dotnet-sdk
     drawio
     firefox
     flatpak
@@ -79,6 +80,7 @@
     java-language-server
     jdk
     kitty
+    kolourpaint
     lazygit
     librewolf
     localsend
@@ -89,8 +91,10 @@
     netcat-gnu
     numbat
     obsidian
+    onlyoffice-bin
     pandoc
     pavucontrol
+    pdfarranger
     prismlauncher
     protonmail-bridge
     protonmail-desktop
