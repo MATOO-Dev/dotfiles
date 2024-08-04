@@ -148,7 +148,7 @@
     treesitter = {
       enable = true;
       folding = true;
-      indent = true;
+      settings.indent.enable = true;
     };
 
     # ---------- Error list ---------- #
