@@ -68,7 +68,7 @@
       git
       git-lfs
       gitflow
-      gnome.gnome-terminal
+      gnome-terminal
       gnupg
       home-manager
       nix-ld
