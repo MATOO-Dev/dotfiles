@@ -146,10 +146,10 @@
   # };
 
   home.packages = with pkgs; [
-    dunst
-    eww
-    libnotify
-    rofi-wayland
-    waybar
+    # dunst
+    # eww
+    # libnotify
+    # rofi-wayland
+    # waybar
   ];
 }

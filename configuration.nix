@@ -18,6 +18,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   environment.variables.hostname = hostname;
+  environment.variables.MOZ_ENABLE_WAYLAND = 0;
   #stylix.base16Scheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
 
   # allow EOL electron version
@@ -63,7 +64,7 @@
       dotnet-runtime
       dotnet-sdk
       dunst
-      firefox
+      firefox-beta
       gcc
       git
       git-lfs
