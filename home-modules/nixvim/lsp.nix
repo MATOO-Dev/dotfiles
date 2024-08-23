@@ -18,7 +18,7 @@
         installCargo = true;
       };
       texlab.enable = true;
-      typst-lsp.enable = true;
+      typst-lsp.enable = false;
     };
     preConfig = ''
       vim.diagnostic.config {

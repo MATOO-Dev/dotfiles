@@ -51,6 +51,7 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
+
   home.packages = with pkgs; [
     alacritty
     anki
@@ -63,16 +64,18 @@
     discord
     dotnet-sdk
     drawio
-    firefox
+    fanctl
+    firefox-beta
     flatpak
     fzf
     gcolor3
     gedit
     gimp
     gitkraken
-    gnome.eog
+    gjs
+    eog # gnome.eog
     gnome-extension-manager
-    gnome.gnome-tweaks
+    gnome-tweaks
     godot_4
     gpu-screen-recorder
     gpu-screen-recorder-gtk
@@ -83,6 +86,7 @@
     kolourpaint
     lazygit
     librewolf
+    lm_sensors
     localsend
     lutris
     meld
@@ -101,6 +105,7 @@
     protonup-qt
     protonvpn-cli
     protonvpn-gui
+    r2modman
     scrcpy
     steam
     texliveFull
@@ -115,7 +120,6 @@
     vlc
     vscodium
     wezterm
-    wireshark
     xclip
     xorg.xkill
     xournalpp

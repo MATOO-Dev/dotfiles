@@ -12,5 +12,17 @@
     drivers = with pkgs; [ hplip ];
   };
 
+  # HP printer driver
   environment.systemPackages = with pkgs; [ hplip ];
+
+  # Enable scanning
+  hardware.sane = {
+    enable = true;
+    extraBackends = [ pkgs.hplipWithPlugin ];
+  };
+
+  users.users.matoo.extraGroups = [
+    "scanner"
+    "lp"
+  ];
 }
