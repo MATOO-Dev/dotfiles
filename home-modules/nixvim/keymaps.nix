@@ -117,18 +117,26 @@
       options.silent = true;
     }
     {
-      #vim.v.count1
-      #'":<C-U>" .. v:count1 .. "bnext<CR>"'
-      action = ":bnext<CR>";
+      action.__raw = ''
+        function()
+          return ":<C-U>" .. vim.v.count1 .. "bnext<CR>"
+        end
+      '';
       key = "gt";
       mode = "n";
       options.silent = true;
+      options.expr = true;
     }
     {
-      action = ":bprev<CR>";
+      action.__raw = ''
+        function()
+          return ":<C-U>" .. vim.v.count1 .. "bprev<CR>"
+        end
+      '';
       key = "gT";
       mode = "n";
       options.silent = true;
+      options.expr = true;
     }
   ];
 }
