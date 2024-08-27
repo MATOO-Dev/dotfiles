@@ -51,7 +51,7 @@
       options.silent = true;
     }
     {
-      action = ":TroubleToggle<CR>";
+      action = ":Trouble diagnostics toggle<CR>";
       key = "<leader>tr";
       mode = "n";
       options.silent = true;
@@ -93,44 +93,8 @@
       options.silent = true;
     }
     {
-      action = ":bprev<CR>";
-      key = "<C-A-h>";
-      mode = "n";
-      options.silent = true;
-    }
-    {
-      action = ":bnext<CR>";
-      key = "<C-A-l>";
-      mode = "n";
-      options.silent = true;
-    }
-    {
       action = ":bd<CR>";
       key = "<leader>bq";
-      mode = "n";
-      options.silent = true;
-    }
-    {
-      action = ":lua require('harpoon.mark').set_current_at(1)<CR>";
-      key = "<leader>1";
-      mode = "n";
-      options.silent = true;
-    }
-    {
-      action = ":lua require('harpoon.mark').set_current_at(2)<CR>";
-      key = "<leader>2";
-      mode = "n";
-      options.silent = true;
-    }
-    {
-      action = ":lua require('harpoon.mark').set_current_at(3)<CR>";
-      key = "<leader>3";
-      mode = "n";
-      options.silent = true;
-    }
-    {
-      action = ":lua require('harpoon.mark').set_current_at(4)<CR>";
-      key = "<leader>4";
       mode = "n";
       options.silent = true;
     }
@@ -149,6 +113,20 @@
     {
       action = "Gzz";
       key = "G";
+      mode = "n";
+      options.silent = true;
+    }
+    {
+      #vim.v.count1
+      #'":<C-U>" .. v:count1 .. "bnext<CR>"'
+      action = ":bnext<CR>";
+      key = "gt";
+      mode = "n";
+      options.silent = true;
+    }
+    {
+      action = ":bprev<CR>";
+      key = "gT";
       mode = "n";
       options.silent = true;
     }
