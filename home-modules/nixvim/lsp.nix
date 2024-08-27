@@ -5,7 +5,8 @@
     enable = true;
     servers = {
       clangd.enable = true;
-      csharp-ls.enable = true;
+      csharp-ls.enable = false;
+      omnisharp.enable = true;
       gdscript.enable = true;
       java-language-server.enable = false;
       java-language-server.cmd = [ "jdtls -data ././jdt-data" ];
