@@ -93,6 +93,12 @@
       options.silent = true;
     }
     {
+      action = "<cmd>lua vim.lsp.buf.rename()<CR>";
+      key = "<F2>";
+      mode = "n";
+      options.silent = true;
+    }
+    {
       action = ":bd<CR>";
       key = "<leader>bq";
       mode = "n";
@@ -138,5 +144,17 @@
       options.silent = true;
       options.expr = true;
     }
+    # {
+    #   action.__raw = ''
+    #     function()
+    #       return col('.') == 1 ? "<Esc>" : "<Esc>l"
+    #     end
+    #   '';
+    #   key = "<Esc>";
+    #   mode = "i";
+    #   options.silent = true;
+    #   options.expr = true;
+    #   lua = true;
+    # }
   ];
 }
