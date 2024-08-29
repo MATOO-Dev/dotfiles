@@ -10,7 +10,7 @@
     formattersByFt = {
       c = [ "astyle" ];
       cpp = [ "astyle" ];
-      cs = [ "astyle" ];
+      cs = [ "csharpier" ];
       nix = [ "nixfmt" ];
       rust = [ "rustfmt" ];
       java = [ "astyle" ];
@@ -30,5 +30,6 @@
     astyle
     nixfmt-rfc-style
     rustfmt
+    csharpier
   ];
 }
