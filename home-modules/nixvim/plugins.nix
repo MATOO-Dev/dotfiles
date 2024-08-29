@@ -84,6 +84,9 @@
       };
     };
 
+    # ---------- Highlight hovered Words ---------- #
+    illuminate.enable = true;
+
     # ---------- Quickly jump around text (like vimium) ---------- #
     leap.enable = true;
 
