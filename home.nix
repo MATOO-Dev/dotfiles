@@ -65,7 +65,7 @@
     dotnet-sdk
     drawio
     fanctl
-    firefox-beta
+    firefox
     flatpak
     fzf
     gcolor3
