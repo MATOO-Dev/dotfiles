@@ -13,7 +13,8 @@
     # inputs.stylix.homeManagerModules.stylix
   ];
 
-  colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
+  # colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
+  colorScheme = inputs.nix-colors.colorSchemes.catppuccin-frappe;
   # stylix = {
   #   image = ./wallpaperNMS.jpg;
   #   polarity = "dark";
