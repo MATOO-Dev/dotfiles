@@ -12,9 +12,10 @@
         c = [ "astyle" ];
         cpp = [ "astyle" ];
         cs = [ "csharpier" ];
+        java = [ "astyle" ];
         nix = [ "nixfmt" ];
         rust = [ "rustfmt" ];
-        java = [ "astyle" ];
+        typst = [ "typstyle" ];
       };
     };
   };
