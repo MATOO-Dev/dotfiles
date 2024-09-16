@@ -31,8 +31,9 @@
 
   programs.nixvim.extraPackages = with pkgs; [
     astyle
+    csharpier
     nixfmt-rfc-style
     rustfmt
-    csharpier
+    # typstyle
   ];
 }
