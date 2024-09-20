@@ -11,7 +11,7 @@
     ignorecase = true;
     smartcase = true;
     wrap = false;
-    linewrap = true;
+    linebreak = true;
     foldmethod = "expr";
     foldlevel = 99;
     showmode = false;
