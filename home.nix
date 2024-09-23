@@ -68,6 +68,7 @@
     fanctl
     firefox
     flatpak
+    footage
     fzf
     gcolor3
     gedit
@@ -83,6 +84,7 @@
     heroic
     java-language-server
     jdk
+    kdenlive
     kitty
     kolourpaint
     lazygit
@@ -117,7 +119,7 @@
     ungoogled-chromium
     valgrind
     vesktop
-    #vintagestory
+    vintagestory
     vlc
     vscodium
     wezterm
