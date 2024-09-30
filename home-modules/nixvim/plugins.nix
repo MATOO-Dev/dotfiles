@@ -130,7 +130,7 @@
     };
 
     # ---------- Quickly surround text ---------- #
-    surround.enable = true;
+    vim-surround.enable = true;
 
     # ---------- Class outlines ---------- #
     tagbar.enable = true;
@@ -175,5 +175,8 @@
 
     # ---------- Undo trees ---------- #
     undotree.enable = true;
+
+    # ---------- Undo trees ---------- #
+    web-devicons.enable = true;
   };
 }
