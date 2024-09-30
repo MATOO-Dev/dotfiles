@@ -75,6 +75,7 @@
     gimp
     gitkraken
     gjs
+    element-desktop
     eog # gnome.eog
     gnome-extension-manager
     gnome-tweaks
@@ -102,6 +103,7 @@
     pandoc
     pavucontrol
     pdfarranger
+    pdfpc
     prismlauncher
     protonmail-bridge
     protonmail-desktop
