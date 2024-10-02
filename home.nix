@@ -110,6 +110,7 @@
     protonup-qt
     protonvpn-cli
     protonvpn-gui
+    qtcreator
     r2modman
     scrcpy
     signal-desktop
