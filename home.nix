@@ -112,6 +112,7 @@
     protonvpn-gui
     r2modman
     scrcpy
+    signal-desktop
     steam
     texliveFull
     thunderbird
