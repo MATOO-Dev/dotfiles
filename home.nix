@@ -77,6 +77,7 @@
     gjs
     element-desktop
     eog # gnome.eog
+    geogebra
     gnome-extension-manager
     gnome-tweaks
     godot_4
@@ -107,11 +108,13 @@
     prismlauncher
     protonmail-bridge
     protonmail-desktop
+    # proton-pass
     protonup-qt
     protonvpn-cli
     protonvpn-gui
     qtcreator
     r2modman
+    ryujinx
     scrcpy
     signal-desktop
     steam
