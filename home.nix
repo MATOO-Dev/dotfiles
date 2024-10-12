@@ -61,6 +61,7 @@
     bazecor
     betterdiscordctl
     blender
+    cmake
     denaro
     discord
     dotnet-sdk
@@ -94,6 +95,7 @@
     lm_sensors
     localsend
     lutris
+    gnumake
     meld
     mission-center
     neofetch
@@ -112,8 +114,10 @@
     protonup-qt
     protonvpn-cli
     protonvpn-gui
+    qt6.full
     qtcreator
     r2modman
+    rstudio
     ryujinx
     scrcpy
     signal-desktop
