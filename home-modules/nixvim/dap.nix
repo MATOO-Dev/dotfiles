@@ -21,6 +21,22 @@
       servers = { };
     };
     configurations = {
+      c = [
+        {
+          name = "Launch C++ debugger";
+          request = "launch";
+          type = "gdb";
+          program.__raw = ''
+            function()
+            return vim.fn.input({
+              prompt = 'Path to executable: ',
+              default = vim.fn.getcwd() .. '/',
+              completion = 'file',
+            })
+            end
+          '';
+        }
+      ];
       cpp = [
         {
           name = "Launch C++ debugger";
