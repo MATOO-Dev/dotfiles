@@ -64,7 +64,7 @@
     godot.enable = true;
 
     # ---------- Training wheels ---------- #
-    hardtime.enable = true;
+    hardtime.enable = false;
 
     # ---------- Quickly change between buffers ---------- #
     harpoon = {
@@ -157,10 +157,10 @@
     # ---------- Error list ---------- #
     trouble = {
       enable = true;
-      settings.action_keys = {
-        jump_close = "<CR>";
-        jump = "o";
-      };
+      # settings.action_keys = {
+      #   jump_close = "<CR>";
+      #   jump = "o";
+      # };
     };
 
     # ---------- Typst integration ---------- #

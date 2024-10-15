@@ -85,11 +85,13 @@
     gpu-screen-recorder
     gpu-screen-recorder-gtk
     heroic
+    inkscape
     java-language-server
     jdk
     kdenlive
     kitty
     kolourpaint
+    kdePackages.kruler
     lazygit
     librewolf
     lm_sensors
