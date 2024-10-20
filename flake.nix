@@ -33,6 +33,14 @@
           allowUnfreePredicate = (_: true);
         };
       };
+      pkgs-stable = import inputs.nixpkgs-stable {
+        system = systemSettings.systemType;
+        hostPlatform = systemSettings.systemType;
+        config = {
+          allowUnfree = true;
+          allowUnfreePredicate = (_: true);
+        };
+      };
     in
     {
       homeConfigurations = {
@@ -41,6 +49,7 @@
           modules = [ ./home.nix ];
           extraSpecialArgs = {
             inherit inputs;
+            inherit pkgs-stable;
             inherit systemSettings;
             inherit userSettings;
           };
@@ -54,6 +63,7 @@
           specialArgs = {
             hostname = userSettings.username + "-" + systemSettings.profile;
             inherit inputs;
+            inherit pkgs-stable;
             inherit systemSettings;
             inherit userSettings;
           };
@@ -63,6 +73,10 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable = {
+      url = "github:nixos/nixpkgs/nixos-24.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

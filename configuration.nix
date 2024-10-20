@@ -93,7 +93,6 @@
       wine
       winetricks
       wireguard-tools
-      zapzap
       zellij
       zoxide
       zsh
