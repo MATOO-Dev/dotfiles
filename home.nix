@@ -1,6 +1,6 @@
 {
-  config,
   pkgs,
+  pkgs-stable,
   inputs,
   ...
 }:
@@ -53,94 +53,100 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
 
-  home.packages = with pkgs; [
-    alacritty
-    anki
-    appeditor
-    audacity
-    bazecor
-    betterdiscordctl
-    blender
-    cmake
-    denaro
-    discord
-    dotnet-sdk
-    drawio
-    fanctl
-    firefox
-    flatpak
-    footage
-    fzf
-    gcolor3
-    gedit
-    gimp
-    gitkraken
-    gjs
-    element-desktop
-    eog # gnome.eog
-    geogebra
-    gnome-extension-manager
-    gnome-tweaks
-    godot_4
-    gpu-screen-recorder
-    gpu-screen-recorder-gtk
-    heroic
-    inkscape
-    java-language-server
-    jdk
-    kdenlive
-    kitty
-    kolourpaint
-    kdePackages.kruler
-    lazygit
-    librewolf
-    lm_sensors
-    localsend
-    lutris
-    gnumake
-    meld
-    mission-center
-    neofetch
-    netcat-gnu
-    numbat
-    obsidian
-    onlyoffice-bin
-    pandoc
-    pavucontrol
-    pdfarranger
-    pdfpc
-    prismlauncher
-    protonmail-bridge
-    protonmail-desktop
-    # proton-pass
-    protonup-qt
-    protonvpn-cli
-    protonvpn-gui
-    qt6.full
-    qtcreator
-    r2modman
-    rstudio
-    ryujinx
-    scrcpy
-    signal-desktop
-    steam
-    texliveFull
-    thunderbird
-    tldr
-    tree
-    typst
-    ungoogled-chromium
-    valgrind
-    vesktop
-    vintagestory
-    vlc
-    vscodium
-    wezterm
-    xclip
-    xorg.xkill
-    xournalpp
-    yt-dlp
-  ];
+  home.packages =
+    (with pkgs; [
+      alacritty
+      # anki
+      appeditor
+      audacity
+      bazecor
+      betterdiscordctl
+      blender
+      cmake
+      denaro
+      discord
+      dotnet-sdk
+      drawio
+      fanctl
+      firefox
+      flatpak
+      footage
+      fzf
+      gcolor3
+      gedit
+      gimp
+      gitkraken
+      gjs
+      element-desktop
+      eog # gnome.eog
+      geogebra
+      gnome-extension-manager
+      gnome-tweaks
+      godot_4
+      gpu-screen-recorder
+      gpu-screen-recorder-gtk
+      heroic
+      inkscape
+      java-language-server
+      jdk
+      kdenlive
+      kitty
+      kolourpaint
+      kdePackages.kruler
+      lazygit
+      librewolf
+      lm_sensors
+      localsend
+      lutris
+      gnumake
+      meld
+      mission-center
+      neofetch
+      netcat-gnu
+      numbat
+      obsidian
+      onlyoffice-bin
+      pandoc
+      pavucontrol
+      pdfarranger
+      pdfpc
+      prismlauncher
+      protonmail-bridge
+      protonmail-desktop
+      # proton-pass
+      protonup-qt
+      protonvpn-cli
+      protonvpn-gui
+      qt6.full
+      qtcreator
+      r2modman
+      rstudio
+      ryujinx
+      scrcpy
+      signal-desktop
+      steam
+      texliveFull
+      thunderbird
+      tldr
+      tree
+      typst
+      ungoogled-chromium
+      valgrind
+      vesktop
+      vintagestory
+      vlc
+      vscodium
+      wezterm
+      xclip
+      xorg.xkill
+      xournalpp
+      yt-dlp
+      # zapzap
+    ])
+    ++ (with pkgs-stable; [
+      anki
+      zapzap
+    ]);
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
