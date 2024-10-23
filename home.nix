@@ -117,6 +117,7 @@
       protonup-qt
       protonvpn-cli
       protonvpn-gui
+      qt6.qtbase
       qt6.full
       qtcreator
       r2modman
