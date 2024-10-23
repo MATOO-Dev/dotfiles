@@ -56,7 +56,7 @@
   home.packages =
     (with pkgs; [
       alacritty
-      # anki
+      anki
       appeditor
       audacity
       bazecor
@@ -141,11 +141,11 @@
       xorg.xkill
       xournalpp
       yt-dlp
-      # zapzap
+      zapzap
     ])
     ++ (with pkgs-stable; [
-      anki
-      zapzap
+      # anki
+      # zapzap
     ]);
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
