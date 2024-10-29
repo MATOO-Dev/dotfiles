@@ -104,7 +104,7 @@
     # ---------- Floating cmdline ---------- #
     noice = {
       enable = false;
-      presets = {
+      settings.presets = {
         bottom_search = true;
         long_message_to_split = true;
       };
