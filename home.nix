@@ -108,6 +108,8 @@
       onlyoffice-bin
       pandoc
       pavucontrol
+      pass
+      passExtensions.pass-tomb
       pdfarranger
       pdfpc
       prismlauncher

@@ -80,7 +80,6 @@
       nh
       nil
       openvpn
-      pass
       protonvpn-cli_2
       protonvpn-gui
       ripgrep
@@ -103,7 +102,7 @@
 
   programs.nix-ld = {
     enable = true;
-    libraries = pkgs.steam-run.fhsenv.args.multiPkgs pkgs;
+    # libraries = pkgs.steam-run.fhsenv.args.multiPkgs pkgs;
   };
 
   system.stateVersion = "23.11"; # Did you read the comment?
