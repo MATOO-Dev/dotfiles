@@ -108,11 +108,14 @@
       onlyoffice-bin
       pandoc
       pavucontrol
-      pass
-      passExtensions.pass-tomb
+      (pass.withExtensions (
+        ext: with ext; [
+          pass-tomb
+        ]
+      ))
+      # pass
       pdfarranger
       pdfpc
-      pinentry-tty
       prismlauncher
       protonmail-bridge
       protonmail-desktop
@@ -132,6 +135,7 @@
       texliveFull
       thunderbird
       tldr
+      tomb
       tree
       typst
       ungoogled-chromium
@@ -140,7 +144,7 @@
       vintagestory
       vlc
       vscodium
-      wezterm
+      wl-clipboard
       xclip
       xorg.xkill
       xournalpp
