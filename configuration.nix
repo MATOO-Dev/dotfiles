@@ -80,6 +80,8 @@
       nh
       nil
       openvpn
+      pinentry-curses
+      pinentry-gtk2
       protonvpn-cli_2
       protonvpn-gui
       ripgrep
