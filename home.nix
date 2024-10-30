@@ -112,6 +112,7 @@
       passExtensions.pass-tomb
       pdfarranger
       pdfpc
+      pinentry-tty
       prismlauncher
       protonmail-bridge
       protonmail-desktop
