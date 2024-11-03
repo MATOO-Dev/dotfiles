@@ -14,7 +14,7 @@
   ];
 
   # colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
-  colorScheme = inputs.nix-colors.colorSchemes.catppuccin-frappe;
+  colorScheme = inputs.nix-colors.colorSchemes.catppuccin-macchiato;
   # stylix = {
   #   image = ./wallpaperNMS.jpg;
   #   polarity = "dark";
