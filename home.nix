@@ -64,6 +64,7 @@
       blender
       cmake
       denaro
+      dbeaver-bin
       discord
       dotnet-sdk
       drawio
