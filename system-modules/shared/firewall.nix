@@ -4,7 +4,10 @@
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [ ];
-    allowedUDPPorts = [ 51820 ];
+    allowedUDPPorts = [
+      51820
+      50990
+    ];
     allowedTCPPortRanges = [
       #kde connect
       {

@@ -64,7 +64,10 @@
     godot.enable = true;
 
     # ---------- Training wheels ---------- #
-    hardtime.enable = true;
+    hardtime = {
+      enable = true;
+      settings.disable_mouse = false;
+    };
 
     # ---------- Quickly change between buffers ---------- #
     harpoon = {
