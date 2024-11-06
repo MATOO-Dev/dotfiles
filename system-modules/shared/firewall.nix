@@ -3,10 +3,13 @@
 {
   networking.firewall = {
     enable = true;
-    allowedTCPPorts = [ ];
+    allowedTCPPorts = [
+      53317 # localsend
+    ];
     allowedUDPPorts = [
-      51820
-      50990
+      53317 # localsend
+      51820 # wireguard
+      50990 # dbeaver
     ];
     allowedTCPPortRanges = [
       #kde connect
