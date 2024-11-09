@@ -14,7 +14,8 @@
   ];
 
   # colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
-  colorScheme = inputs.nix-colors.colorSchemes.catppuccin-macchiato;
+  # colorScheme = inputs.nix-colors.colorSchemes.catppuccin-macchiato;
+  colorScheme = inputs.nix-colors.colorSchemes.monokai;
   # stylix = {
   #   image = ./wallpaperNMS.jpg;
   #   polarity = "dark";
@@ -86,6 +87,7 @@
       godot_4
       gpu-screen-recorder
       gpu-screen-recorder-gtk
+      hashcat
       heroic
       inkscape
       java-language-server
