@@ -97,6 +97,7 @@
       kolourpaint
       kdePackages.kruler
       lazygit
+      libreoffice
       librewolf
       lm_sensors
       localsend
