@@ -83,6 +83,7 @@
       eog # gnome.eog
       geogebra
       gnome-extension-manager
+      gnome-obfuscate
       gnome-tweaks
       godot_4
       gpu-screen-recorder
