@@ -62,7 +62,7 @@
       audacity
       bazecor
       betterdiscordctl
-      # blender
+      blender
       cmake
       denaro
       dbeaver-bin
