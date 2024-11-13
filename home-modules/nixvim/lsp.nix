@@ -11,6 +11,7 @@
       java_language_server.enable = false;
       java_language_server.cmd = [ "jdtls -data ././jdt-data" ];
       java_language_server.package = pkgs."jdt-language-server";
+      lua_ls.enable = true;
       marksman.enable = true;
       nil_ls.enable = true;
       rust_analyzer = {
