@@ -9,9 +9,9 @@
 {
   imports = [
     ./system-modules/shared/shared-modules.nix
-    (
-      ./system-modules + ("/" + systemSettings.profile) + ("/" + systemSettings.profile + "-modules.nix")
-    )
+    # (
+    #   ./system-modules + ("/" + systemSettings.profile) + ("/" + systemSettings.profile + "-modules.nix")
+    # )
     # inputs.stylix.nixosModules.stylix
   ];
 
