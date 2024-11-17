@@ -11,5 +11,6 @@
     ./i3.nix
     ./kdeconnect.nix
     ./git.nix
+    ./gnome.nix
   ];
 }
