@@ -57,11 +57,42 @@
       };
 
       nixosConfigurations = {
-        system = inputs.nixpkgs.lib.nixosSystem {
+        desktop = inputs.nixpkgs.lib.nixosSystem {
           system = systemSettings.systemType;
-          modules = [ ./configuration.nix ];
+          modules = [
+            ./configuration.nix
+            ./system-modules/desktop/desktop-modules.nix
+          ];
           specialArgs = {
-            hostname = userSettings.username + "-" + systemSettings.profile;
+            hostname = "matoo-desktop";
+            inherit inputs;
+            inherit pkgs-stable;
+            inherit systemSettings;
+            inherit userSettings;
+          };
+        };
+        laptop = inputs.nixpkgs.lib.nixosSystem {
+          system = systemSettings.systemType;
+          modules = [
+            ./configuration.nix
+            ./system-modules/laptop/laptop-modules.nix
+          ];
+          specialArgs = {
+            hostname = "matoo-laptop";
+            inherit inputs;
+            inherit pkgs-stable;
+            inherit systemSettings;
+            inherit userSettings;
+          };
+        };
+        experimental = inputs.nixpkgs.lib.nixosSystem {
+          system = systemSettings.systemType;
+          modules = [
+            ./configuration.nix
+            ./system-modules/experimental/experimental-modules.nix
+          ];
+          specialArgs = {
+            hostname = "nixos-test";
             inherit inputs;
             inherit pkgs-stable;
             inherit systemSettings;
