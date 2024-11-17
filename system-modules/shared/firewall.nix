@@ -5,6 +5,7 @@
     enable = true;
     allowedTCPPorts = [
       53317 # localsend
+      27040 # steam local transfer
     ];
     allowedUDPPorts = [
       53317 # localsend
@@ -23,6 +24,11 @@
       {
         from = 1714;
         to = 1764;
+      }
+      # steam local transfer
+      {
+        from = 27031;
+        to = 27036;
       }
     ];
   };
