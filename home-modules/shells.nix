@@ -5,7 +5,9 @@ let
     tma = "tmux a";
     open = "xdg-open";
     buildHome = "/home/matoo/dotfiles/scripts/buildHome.sh";
-    buildSystem = "/home/matoo/dotfiles/scripts/buildSystem.sh";
+    buildDesktop = "/home/matoo/dotfiles/scripts/buildDesktop.sh";
+    buildLaptop = "/home/matoo/dotfiles/scripts/buildLaptop.sh";
+    buildExperimental = "/home/matoo/dotfiles/scripts/buildExperimental.sh";
     buildAll = "/home/matoo/dotfiles/scripts/buildAll.sh";
     updateFlake = "/home/matoo/dotfiles/scripts/updateFlake.sh";
     upgradeAll = "/home/matoo/dotfiles/scripts/upgradeAll.sh";
