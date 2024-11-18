@@ -4,6 +4,7 @@
   outputs =
     { self, ... }@inputs:
 
+    # these dont really do anything yet, theyre just placeholders
     let
       userSettings = {
         username = "matoo";
@@ -19,7 +20,6 @@
         configDirectory = "~/dotfiles";
       };
       systemSettings = {
-        profile = "desktop";
         timezone = "Europe/Berlin";
         locale = "en_US.UTF-8";
         specialLocale = "de_DE.UTF-8";
