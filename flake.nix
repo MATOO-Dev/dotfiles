@@ -85,20 +85,6 @@
             inherit userSettings;
           };
         };
-        experimental = inputs.nixpkgs.lib.nixosSystem {
-          system = systemSettings.systemType;
-          modules = [
-            ./configuration.nix
-            ./system-modules/experimental/experimental-modules.nix
-          ];
-          specialArgs = {
-            hostname = "nixos-test";
-            inherit inputs;
-            inherit pkgs-stable;
-            inherit systemSettings;
-            inherit userSettings;
-          };
-        };
       };
     };
 
