@@ -5,6 +5,7 @@
     ./audio.nix
     ./boilerplate.nix
     ./bootloader.nix
+    ./boxes.nix
     ./display.nix
     ./experimental.nix
     ./firewall.nix
@@ -13,6 +14,5 @@
     ./locale.nix
     ./network.nix
     ./printing.nix
-    ./virtualbox.nix
   ];
 }
