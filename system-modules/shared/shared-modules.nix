@@ -13,5 +13,6 @@
     ./locale.nix
     ./network.nix
     ./printing.nix
+    ./virtualbox.nix
   ];
 }
