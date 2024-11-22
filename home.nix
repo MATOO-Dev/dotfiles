@@ -153,6 +153,7 @@
       xclip
       xorg.xkill
       xournalpp
+      yt-dlg
       yt-dlp
       zapzap
     ])
