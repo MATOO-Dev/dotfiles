@@ -105,7 +105,8 @@
       lutris
       gnumake
       meld
-      mission-center
+      # build failure
+      # mission-center
       neofetch
       netcat-gnu
       numbat

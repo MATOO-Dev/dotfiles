@@ -64,6 +64,7 @@
       dotnet-runtime
       dotnet-sdk
       dunst
+      efibootmgr
       firefox
       gcc
       git
