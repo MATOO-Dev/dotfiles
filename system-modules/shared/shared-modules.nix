@@ -14,5 +14,6 @@
     ./locale.nix
     ./network.nix
     ./printing.nix
+    ./protonmail.nix
   ];
 }

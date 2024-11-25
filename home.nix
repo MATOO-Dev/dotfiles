@@ -94,6 +94,7 @@
       java-language-server
       jdk
       kdenlive
+      keepassxc
       kitty
       kolourpaint
       kdePackages.kruler
@@ -123,8 +124,6 @@
       pdfarranger
       pdfpc
       prismlauncher
-      protonmail-bridge
-      protonmail-desktop
       # proton-pass
       protonup-qt
       protonvpn-cli
