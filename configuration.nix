@@ -15,7 +15,9 @@
     # inputs.stylix.nixosModules.stylix
   ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  # boot.kernelPackages = pkgs.linuxPackages_latest;
+  # todo: re-enable latest kernel once nvidia fixes their drivers
+  boot.kernelPackages = pkgs.linuxPackages_6_11;
 
   environment.variables.hostname = hostname;
   environment.variables.MOZ_ENABLE_WAYLAND = 0;
