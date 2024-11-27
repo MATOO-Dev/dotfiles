@@ -7,11 +7,11 @@ let
     buildHome = "/home/matoo/dotfiles/scripts/buildHome.sh";
     buildDesktop = "/home/matoo/dotfiles/scripts/buildDesktop.sh";
     buildLaptop = "/home/matoo/dotfiles/scripts/buildLaptop.sh";
-    buildExperimental = "/home/matoo/dotfiles/scripts/buildExperimental.sh";
     buildAll = "/home/matoo/dotfiles/scripts/buildAll.sh";
     updateFlake = "/home/matoo/dotfiles/scripts/updateFlake.sh";
     upgradeAll = "/home/matoo/dotfiles/scripts/upgradeAll.sh";
     autoclean = "/home/matoo/dotfiles/scripts/autoclean.sh";
+    bootWindows = "/home/matoo/dotfiles/scripts/bootWindows.sh";
     ls = "ls --color";
   };
 in
