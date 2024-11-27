@@ -90,6 +90,7 @@
       gpu-screen-recorder-gtk
       hashcat
       heroic
+      hydrapaper
       inkscape
       java-language-server
       jdk
@@ -132,6 +133,7 @@
       qt6.full
       qtcreator
       r2modman
+      revolt-desktop
       rstudio
       ryujinx
       scrcpy

@@ -32,6 +32,8 @@
         sync_to_monitor = "yes";
         editor = "nvim";
         wayland_titlebar_color = "system";
+        background_opacity = 1;
+        background_blur = 1;
 
         foreground = "#${theme.base05}";
         background = "#${theme.base00}";
