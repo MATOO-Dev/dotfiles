@@ -6,6 +6,8 @@
     allowedTCPPorts = [
       53317 # localsend
       27040 # steam local transfer
+      1143 # protonmail-bridge
+      1025 # protonmail-bridge
     ];
     allowedUDPPorts = [
       53317 # localsend
