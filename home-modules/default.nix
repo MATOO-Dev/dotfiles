@@ -12,5 +12,6 @@
     ./kdeconnect.nix
     ./git.nix
     ./gnome.nix
+    ./discover.nix
   ];
 }
