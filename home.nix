@@ -67,6 +67,7 @@
       denaro
       dbeaver-bin
       discord
+      discover-overlay
       dotnet-sdk
       drawio
       fanctl

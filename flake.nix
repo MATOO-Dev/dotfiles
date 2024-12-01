@@ -108,5 +108,6 @@
       url = "github:thiagokokada/nix-alien";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    autostart.url = "github:zocker1999net/home-manager-xdg-autostart";
   };
 }
