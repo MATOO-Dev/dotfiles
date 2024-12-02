@@ -653,11 +653,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1733153454,
-        "narHash": "sha256-GG7uYg313qp9dgVV6ZZTpjTUDJziF9eM2/haFFQ3anU=",
+        "lastModified": 1733156029,
+        "narHash": "sha256-kfNKdi/Gj15p5grVBKGDXcmT72c/KnJjrI+imaL3WwA=",
         "owner": "matoo-dev",
         "repo": "nvim-config",
-        "rev": "33240336bff3e67e6f42d80ee07019c60d7aed6e",
+        "rev": "ddd5b4b3586fdea77c703ea00f2f6fa63da9c0ff",
         "type": "github"
       },
       "original": {
