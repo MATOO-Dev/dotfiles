@@ -9,6 +9,7 @@
   imports = [
     inputs.nix-colors.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
+    # inputs.nvim-config.homeModule
     ./home-modules/default.nix
     # inputs.stylix.homeManagerModules.stylix
   ];
