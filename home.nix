@@ -2,6 +2,7 @@
   pkgs,
   pkgs-stable,
   inputs,
+  systemSettings,
   ...
 }:
 
@@ -9,7 +10,9 @@
   imports = [
     inputs.nix-colors.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
+    # inputs.nvim-config.packages.${systemSettings.systemType}.nvim
     # inputs.nvim-config.homeModule
+    # inputs.nvim-config.packages.x86_64-linux.nvim
     ./home-modules/default.nix
     # inputs.stylix.homeManagerModules.stylix
   ];
