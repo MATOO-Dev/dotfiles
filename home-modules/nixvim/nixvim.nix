@@ -9,7 +9,7 @@
   ];
 
   programs.nixvim = {
-    enable = true;
+    enable = false;
 
     globals = {
       mapleader = " ";

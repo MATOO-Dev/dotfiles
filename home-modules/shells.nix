@@ -3,12 +3,14 @@ let
   aliases = {
     nv = "nvim";
     tma = "tmux a";
+	laz = "lazygit";
     open = "xdg-open";
     buildHome = "/home/matoo/dotfiles/scripts/buildHome.sh";
     buildDesktop = "/home/matoo/dotfiles/scripts/buildDesktop.sh";
     buildLaptop = "/home/matoo/dotfiles/scripts/buildLaptop.sh";
     buildAll = "/home/matoo/dotfiles/scripts/buildAll.sh";
     updateFlake = "/home/matoo/dotfiles/scripts/updateFlake.sh";
+    updateNvim = "/home/matoo/dotfiles/scripts/updateNvim.sh";
     upgradeAll = "/home/matoo/dotfiles/scripts/upgradeAll.sh";
     autoclean = "/home/matoo/dotfiles/scripts/autoclean.sh";
     bootWindows = "/home/matoo/dotfiles/scripts/bootWindows.sh";

@@ -50,7 +50,11 @@
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
   # allow EOL electron version
-  nixpkgs.config.permittedInsecurePackages = [ "electron-25.9.0" ];
+  nixpkgs.config.permittedInsecurePackages = [ 
+		"electron-25.9.0" # dont remember, probably discord
+		"dotnet-runtime-7.0.20" # vintage story
+		"dotnet-runtime-wrapped-7.0.20" # vintage story
+	];
 
   # unfree test
   nixpkgs.config.allowUnfree = true;
@@ -167,7 +171,8 @@
     ++ (with pkgs-stable; [
       # anki
       # zapzap
-    ]);
+    ])
+    ++ ([ inputs.nvim-config.packages.${systemSettings.systemType}.nvim ]);
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
