@@ -516,6 +516,21 @@
         "type": "github"
       }
     },
+    "nixCats": {
+      "locked": {
+        "lastModified": 1731340411,
+        "narHash": "sha256-FOqh3u8fOGQh26J7HF2cu5/jyHVIAFWBkhm4189GMiM=",
+        "owner": "BirdeeHub",
+        "repo": "nixCats-nvim",
+        "rev": "d739e022ef7bc3d3ab5ca2303a8f1dff7a8aaf74",
+        "type": "github"
+      },
+      "original": {
+        "owner": "BirdeeHub",
+        "repo": "nixCats-nvim",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1732521221,
@@ -630,6 +645,27 @@
         "type": "github"
       }
     },
+    "nvim-config": {
+      "inputs": {
+        "nixCats": "nixCats",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1733102410,
+        "narHash": "sha256-STvarvG6PvvIURDak9d+u6aToPAO2Vfesjfkhj0jo3c=",
+        "owner": "matoo-dev",
+        "repo": "nvim-config",
+        "rev": "abee3b0042ccf5e2b42cfb424bdaefed661c2d3b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "matoo-dev",
+        "repo": "nvim-config",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "autostart": "autostart",
@@ -639,6 +675,7 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-stable": "nixpkgs-stable",
         "nixvim": "nixvim",
+        "nvim-config": "nvim-config",
         "stylix": "stylix"
       }
     },
