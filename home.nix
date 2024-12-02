@@ -50,11 +50,14 @@
   home.stateVersion = "23.11"; # Please read the comment before changing.
 
   # allow EOL electron version
-  nixpkgs.config.permittedInsecurePackages = [ 
-		"electron-25.9.0" # dont remember, probably discord
-		"dotnet-runtime-7.0.20" # vintage story
-		"dotnet-runtime-wrapped-7.0.20" # vintage story
-	];
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-25.9.0" # dont remember, probably discord
+    "dotnet-runtime-7.0.20" # vintage story
+    "dotnet-runtime-wrapped-7.0.20" # vintage story
+    # "dotnet-core-combined" # nixvim
+    # "dotnet-sdk-6.0.428" # nixvim
+    # "dotnet-sdk-wrapped-6.0.428" # vintage story
+  ];
 
   # unfree test
   nixpkgs.config.allowUnfree = true;
