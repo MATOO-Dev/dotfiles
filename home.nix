@@ -2,20 +2,23 @@
   pkgs,
   pkgs-stable,
   inputs,
-  systemSettings,
   ...
 }:
 
 {
   imports = [
     inputs.nix-colors.homeManagerModules.default
-    inputs.nixvim.homeManagerModules.nixvim
-    # inputs.nvim-config.packages.${systemSettings.systemType}.nvim
-    # inputs.nvim-config.homeModule
-    # inputs.nvim-config.packages.x86_64-linux.nvim
+    inputs.nvim-config.homeModule
     ./home-modules/default.nix
     # inputs.stylix.homeManagerModules.stylix
   ];
+
+	# enable home-manager to manage nvim so nixCats config can be used
+	nvim = {
+		enable = true;
+		packageNames = [ "nvim" ];
+		# nixpkgs_version = inputs.nixpkgs;
+	};
 
   # colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
   # colorScheme = inputs.nix-colors.colorSchemes.catppuccin-macchiato;
@@ -56,7 +59,7 @@
     "dotnet-runtime-wrapped-7.0.20" # vintage story
     # "dotnet-core-combined" # nixvim
     # "dotnet-sdk-6.0.428" # nixvim
-    # "dotnet-sdk-wrapped-6.0.428" # vintage story
+    # "dotnet-sdk-wrapped-6.0.428" # nixvim
   ];
 
   # unfree test
@@ -174,8 +177,7 @@
     ++ (with pkgs-stable; [
       # anki
       # zapzap
-    ])
-    ++ ([ inputs.nvim-config.packages.${systemSettings.systemType}.nvim ]);
+    ]);
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
