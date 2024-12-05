@@ -169,6 +169,7 @@
       xclip
       xorg.xkill
       xournalpp
+	  xwaylandvideobridge
       yt-dlg
       yt-dlp
       zapzap
