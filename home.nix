@@ -70,9 +70,9 @@
 
   home.packages =
     (with pkgs; [
+	  alacarte
       alacritty
       anki
-      appeditor
       audacity
       bazecor
       betterdiscordctl
