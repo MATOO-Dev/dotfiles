@@ -13,5 +13,6 @@
     ./git.nix
     ./gnome.nix
     ./discover.nix
+	./desktop.nix
   ];
 }
