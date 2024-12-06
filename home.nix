@@ -4,7 +4,6 @@
   inputs,
   ...
 }:
-
 {
   imports = [
     inputs.nix-colors.homeManagerModules.default
@@ -13,12 +12,12 @@
     # inputs.stylix.homeManagerModules.stylix
   ];
 
-	# enable home-manager to manage nvim so nixCats config can be used
-	nvim = {
-		enable = true;
-		packageNames = [ "nvim" ];
-		# nixpkgs_version = inputs.nixpkgs;
-	};
+  # enable home-manager to manage nvim so nixCats config can be used
+  nvim = {
+    enable = true;
+    packageNames = [ "nvim" ];
+    # nixpkgs_version = inputs.nixpkgs;
+  };
 
   # colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
   # colorScheme = inputs.nix-colors.colorSchemes.catppuccin-macchiato;
@@ -70,7 +69,7 @@
 
   home.packages =
     (with pkgs; [
-	  alacarte
+      alacarte
       alacritty
       anki
       audacity
@@ -169,7 +168,7 @@
       xclip
       xorg.xkill
       xournalpp
-	  xwaylandvideobridge
+      xwaylandvideobridge
       yt-dlg
       yt-dlp
       zapzap
