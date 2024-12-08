@@ -39,6 +39,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+		"dialout" # bazecor
     ];
     shell = pkgs.zsh;
   };
