@@ -1,4 +1,8 @@
-{ config, lib, ... }:
+{
+  config,
+  lib,
+  ...
+}:
 {
   programs.kitty = {
     enable = true;
@@ -10,7 +14,7 @@
 
     font = lib.mkDefault {
       name = "CaskaydiaCoveNF-Mono";
-      size = 16;
+      size = 14;
     };
 
     keybindings = {
