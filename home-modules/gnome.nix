@@ -6,9 +6,10 @@
     caffeine
     gsconnect
     just-perfection
+    places-status-indicator
     quarter-windows
     soft-brightness-plus
-    places-status-indicator
+    window-gestures
   ];
 
   dconf.settings = {
@@ -20,9 +21,10 @@
         caffeine.extensionUuid
         gsconnect.extensionUuid
         just-perfection.extensionUuid
+        places-status-indicator.extensionUuid
         quarter-windows.extensionUuid
         soft-brightness-plus.extensionUuid
-        places-status-indicator.extensionUuid
+        window-gestures.extensionUuid
       ];
     };
   };
