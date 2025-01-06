@@ -39,7 +39,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
-		"dialout" # bazecor
+      "dialout" # bazecor
     ];
     shell = pkgs.zsh;
   };
@@ -88,7 +88,9 @@
       pinentry-gtk2
       protonvpn-cli_2
       protonvpn-gui
+      qemu
       ripgrep
+      spice-vdagent
       swww
       syncthing
       tmux
@@ -105,6 +107,17 @@
       zsh-powerlevel10k
     ]
   );
+
+  # Enable UEFI for VMs
+  systemd.tmpfiles.rules =
+    let
+      firmware = pkgs.runCommandLocal "qemu-firmware" { } ''
+        			mkdir $out
+        			cp ${pkgs.qemu}/share/qemu/firmware/*.json $out
+        			substituteInPlace $out/*.json --replace ${pkgs.qemu} /run/current-system/sw/
+        		'';
+    in
+    [ "L+ /var/lib/qemu/firmware - - - - ${firmware}" ];
 
   programs.nix-ld = {
     enable = true;
