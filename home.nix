@@ -96,7 +96,7 @@
       element-desktop
       eog # gnome.eog
       geogebra
-      gnome-extension-manager
+      # gnome-extension-manager
       gnome-obfuscate
       gnome-tweaks
       godot_4
