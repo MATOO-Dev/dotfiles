@@ -90,6 +90,7 @@
       protonvpn-gui
       qemu
       ripgrep
+      spice
       spice-vdagent
       swww
       syncthing

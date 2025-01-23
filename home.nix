@@ -71,6 +71,7 @@
     (with pkgs; [
       alacarte
       alacritty
+      albert
       anki
       audacity
       bazecor
