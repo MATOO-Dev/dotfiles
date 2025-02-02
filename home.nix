@@ -148,7 +148,6 @@
       qtcreator
       r2modman
       revolt-desktop
-      rstudio
       ryujinx
       scrcpy
       signal-desktop
