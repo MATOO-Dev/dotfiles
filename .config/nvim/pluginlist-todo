@@ -1,0 +1,57 @@
+################
+#### prio 1 ####
+################
+# (stuff I'm currently configuring or will probably be included soon)
+dap
+diffview
+tabout
+floaterm
+illuminate
+image.nvim
+marks.nvim
+minty + nvim-highlight-colors
+noice
+notify
+project
+quicker
+ufo + indent-blankline
+markview
+obsidian
+overseer
+treesj
+trouble
+typst-preview + typst-conceal
+conform (or other formatting)
+
+################
+#### prio 2 ####
+################
+# (stuff I'm still considering)
+fugitive
+navbuddy
+snacks
+supertab
+tagbar
+
+################
+#### prio 3 ####
+################
+# (stuff i haven't gotten around to looking at yet)
+barbecue
+codesnap
+cursorline
+dashboard
+dropbar
+firenvim
+fzf
+harpoon
+line
+lsp_lines
+markview
+multicursors
+navic
+neotest
+nix
+orgmode
+replace-with-register
+scrollbar/minimap
