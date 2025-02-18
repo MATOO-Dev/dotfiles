@@ -33,10 +33,16 @@ decman.packages += [
         'vim',
 ]
 
+# Desktop Only
+decman.packages += [
+        'lib32-nvidia-utils',
+        'nvidia-open-lts',
+        'nvidia-utils',
+]
+
 # Desktop Environment
 decman.packages += [
         'hyprland',
-        'hyprshot',
         'waybar',
         'wofi',
 ]
@@ -76,7 +82,6 @@ decman.packages += [
         'kdenlive',
         'keepassxc',
         'kolourpaint',
-        # 'libreoffice',
         'lutris',
         'mission-center',
         'obfuscate',
@@ -104,6 +109,7 @@ decman.aur_packages += [
         'footage',
         'gpu-screen-recorder-gtk',
         'heroic-games-launcher-bin',
+        'hyprshot',
         'localsend-bin',
         'numbat',
         'onlyoffice-bin',
