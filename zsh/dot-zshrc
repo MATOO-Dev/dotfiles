@@ -14,3 +14,6 @@ zstyle ':completion:*' list-colors "''${(s.:.)LS_COLORS}"
 
 # Initialize zoxide
 eval "$(zoxide init zsh --cmd j)"
+
+# Initialize starship
+eval "$(starship init zsh)"
