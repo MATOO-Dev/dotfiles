@@ -69,8 +69,10 @@ format = '[$all_status$ahead$behind](bg:theme0c fg:theme01)'
 
 [character]
 format = "$symbol "
-succes_symbol = '[](fg:theme0b)'
-error_symbol = '[](fg:theme08)'
+# success_symbol = '[](fg:theme0b)'
+success_symbol = '[✔](fg:theme0b)'
+# error_symbol = '[](fg:theme08)'
+error_symbol = '[✘](fg:theme08)'
 
 [time]
 disabled = false

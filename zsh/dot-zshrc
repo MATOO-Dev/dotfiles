@@ -4,6 +4,7 @@ export EDITOR=nvim
 # Aliases
 alias ls='ls --color'
 alias nv=nvim
+alias laz=lazygit
 alias open=xdg-open
 
 # Case-insensitive autocompletion

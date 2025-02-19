@@ -27,9 +27,9 @@ decman.packages += [
         'snapper',
         'sudo',
         'stow',
-        'terminus-font',
         'timeshift',
         'ttf-font-awesome',
+        'nerd-fonts',
         'vim',
 ]
 
@@ -43,6 +43,7 @@ decman.packages += [
 # Desktop Environment
 decman.packages += [
         'hyprland',
+        'hyprsunset',
         'waybar',
         'wofi',
 ]
@@ -56,6 +57,7 @@ decman.packages += [
         'lazygit',
         'neofetch',
         'neovim',
+        'starship',
         'tldr',
         'tree',
         'typst',
