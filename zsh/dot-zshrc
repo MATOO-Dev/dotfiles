@@ -8,6 +8,7 @@ alias laz=lazygit
 alias open=xdg-open
 
 # Case-insensitive autocompletion
+autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # something about ls colors, i forgor

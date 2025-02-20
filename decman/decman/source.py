@@ -1,25 +1,36 @@
 import decman
 from decman import File, Directory
 
-# Essential system packages
+# System packages
 decman.packages += [
         'amd-ucode',
+        'ark',
         'base',
         'base-devel',
         'btrfs-progs',
+        'cmake',
+        'cpio',
         'cryptsetup',
         'efibootmgr',
+        'gamemode',
         'grub',
         'grub-btrfs',
         'inotify-tools',
         'kitty',
+        'lib32-gamemode',
         'linux',
         'linux-lts',
         'linux-firmware',
         'ly',
+        'uwsm',
         'man-db',
         'neofetch',
+        'nerd-fonts',
         'networkmanager',
+        'noto-fonts',
+        'noto-fonts-cjk',
+        'noto-fonts-emoji',
+        'noto-fonts-extra',
         'openssh',
         'pipewire',
         'pipewire-alsa',
@@ -29,7 +40,6 @@ decman.packages += [
         'stow',
         'timeshift',
         'ttf-font-awesome',
-        'nerd-fonts',
         'vim',
 ]
 
@@ -42,6 +52,9 @@ decman.packages += [
 
 # Desktop Environment
 decman.packages += [
+        'archlinux-xdg-menu',
+        'libva-nvidia-driver',
+        'dunst',
         'hyprland',
         'hyprsunset',
         'waybar',
@@ -80,6 +93,7 @@ decman.packages += [
         'gimp',
         'gnome-keyring',
         'eog',
+        'godot-mono',
         'inkscape',
         'kdenlive',
         'keepassxc',

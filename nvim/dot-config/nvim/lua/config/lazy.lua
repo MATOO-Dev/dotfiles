@@ -20,6 +20,7 @@ require('lazy').setup({
 	spec = {
 		{ import = 'plugins' },
 		'neovim/nvim-lspconfig',
+		{ import = 'debug' }
 	},
 	-- additional settings
 	-- colorscheme that will be used when installing plugins
