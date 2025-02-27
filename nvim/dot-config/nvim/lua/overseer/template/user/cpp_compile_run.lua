@@ -1,5 +1,5 @@
 return {
-	name = "C++: compile & run",
+	name = "2) C++: compile & run",
 	builder = function()
 		local file = vim.fn.expand("%:p")
 		return {
@@ -19,7 +19,7 @@ return {
 						cmd = { "./a.out" },
 						components = {
 							{ "on_exit_set_status", success_codes = { 0 } },
-							{ "open_output", direction = "float", focus = true, on_start = "always" },
+							{ "open_output",        direction = "float",  focus = true, on_start = "always" },
 						},
 					},
 				},

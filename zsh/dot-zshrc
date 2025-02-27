@@ -1,17 +1,38 @@
 # Environment variables
-export EDITOR=nvim
+EDITOR=nvim
 
 # Aliases
 alias ls='ls --color'
 alias nv=nvim
 alias laz=lazygit
 alias open=xdg-open
+alias clear="printf '\033[2J\033[3J\033[1;1H'" #clear the scrollback buffer aswell
+
+# History settings
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=$HISTSIZE
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_SPACE
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
 
 # Case-insensitive autocompletion
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-# something about ls colors, i forgor
+# Fzf tab completion
+# source /usr/share/zsh/plugins/fzf-tab-git/fzf-tab.plugin.zsh
+# zstyle ':completion:*' menu no
+# zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+
+# # Enable ls colors for autocompletion
+# # Disabled, superseded by fzf-tab-completion
 zstyle ':completion:*' list-colors "''${(s.:.)LS_COLORS}"
 
 # Initialize zoxide
@@ -19,3 +40,12 @@ eval "$(zoxide init zsh --cmd j)"
 
 # Initialize starship
 eval "$(starship init zsh)"
+
+# Enable fzf shell integration
+eval "$(fzf --zsh)"
+
+# Virtual text suggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

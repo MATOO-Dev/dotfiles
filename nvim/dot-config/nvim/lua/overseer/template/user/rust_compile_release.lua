@@ -1,10 +1,9 @@
 return {
-	name = "Rust: compile with debug flags",
+	name = "4) Rust: compile in release mode",
 	builder = function()
-		local file = vim.fn.expand("%:p")
 		return {
-			cmd = { 'rustc' },
-			args = { file, "-g" },
+			cmd = { 'cargo', 'build' },
+			args = { '--release' },
 			components = {
 				{ "on_exit_set_status", success_codes = { 0 } },
 				{ "on_output_quickfix", open_on_exit = "failure" },

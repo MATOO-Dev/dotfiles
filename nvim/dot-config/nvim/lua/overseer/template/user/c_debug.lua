@@ -1,5 +1,5 @@
 return {
-	name = "C: compile & debug flags",
+	name = "3) C: compile with debug flags",
 	builder = function()
 		local file = vim.fn.expand("%:p")
 		return {

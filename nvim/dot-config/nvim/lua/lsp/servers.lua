@@ -19,7 +19,12 @@ return {
 
 	csharp_ls = {},
 
-	rust_analyzer = {},
+	rust_analyzer = {
+		diagnostics = {
+			enable = true,
+			experimental = { enable = false },
+		},
+	},
 
 	texlab = {},
 

@@ -1,10 +1,8 @@
 return {
-	name = "Rust: compile",
+	name = "1) Rust: check compilation",
 	builder = function()
-		local file = vim.fn.expand("%:p")
 		return {
-			cmd = { 'rustc' },
-			args = { file },
+			cmd = { 'cargo', 'check' },
 			components = {
 				{ "on_exit_set_status", success_codes = { 0 } },
 				{ "on_output_quickfix", open_on_exit = "failure" },

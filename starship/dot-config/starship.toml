@@ -15,6 +15,7 @@ $git_status\
 
 right_format = """
 $character\
+${env_var.ZVM_MODE}\
 [](fg:theme0d)\
 $time\
 [](fg:theme0d)\

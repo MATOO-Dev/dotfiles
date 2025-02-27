@@ -1,10 +1,8 @@
 return {
-	name = "3) C++: compile with debug flags",
+	name = "2) Rust: compile in debug mode",
 	builder = function()
-		local file = vim.fn.expand("%:p")
 		return {
-			cmd = { "g++" },
-			args = { file, "-g" },
+			cmd = { 'cargo', 'build' },
 			components = {
 				{ "on_exit_set_status", success_codes = { 0 } },
 				{ "on_output_quickfix", open_on_exit = "failure" },
@@ -12,6 +10,6 @@ return {
 		}
 	end,
 	condition = {
-		filetype = { "cpp" },
+		filetype = { "rust" },
 	},
 }

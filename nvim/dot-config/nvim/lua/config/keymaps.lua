@@ -22,13 +22,17 @@ vim.keymap.set('n', '<leader>nh', '<cmd>noh<cr>', { desc = 'Disable Search Highl
 vim.keymap.set('n', '<leader>w', '<c-w>', { desc = 'Switch Window Init' })
 
 -- quit the current buffer
-vim.keymap.set('n', '<leader>qq', '<cmd>bd<cr>', { desc = 'Quit Buffer' })
+vim.keymap.set('n', '<leader>q', '<cmd>bd<cr>', { desc = 'Quit Buffer' })
 
 -- place empty line above/below without going into insert mode
 vim.keymap.set('n', '<cr>', 'o<esc>', { desc = 'Empty Line Below' })
 vim.keymap.set('n', '<s-cr>', 'O<esc>', { desc = 'Empty Line Above' })
 
 --go to next/previous buffer with count support
+vim.keymap.set('n', '<c-s-k>', '":<c-u>" .. v:count1 .. "bnext<cr>"', { expr = true, desc = 'Next Buffer' })
+vim.keymap.set('n', '<c-s-j>', '":<c-u>" .. v:count1 .. "bprev<cr>"', { expr = true, desc = 'Previous Buffer' })
+vim.keymap.set('n', '<c-n>', '":<c-u>" .. v:count1 .. "bnext<cr>"', { expr = true, desc = 'Next Buffer' })
+vim.keymap.set('n', '<c-p>', '":<c-u>" .. v:count1 .. "bprev<cr>"', { expr = true, desc = 'Previous Buffer' })
 
 -- cycle through quickfix list without focus
 vim.keymap.set('n', '<a-n>', '<cmd>cnext<cr>', { desc = 'Go to next quickfix item' })

@@ -20,9 +20,10 @@ return {
 				'user.cpp_compile',
 				'user.cpp_compile_run',
 				'user.cpp_debug',
-				'user.rust_compile',
+				'user.rust_check',
+				'user.rust_compile_debug',
 				'user.rust_compile_run',
-				'user.rust_debug',
+				'user.rust_compile_release',
 			},
 		},
 	}

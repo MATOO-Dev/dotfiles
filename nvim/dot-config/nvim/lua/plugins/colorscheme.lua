@@ -6,6 +6,14 @@ local rosepine = {
 	end
 }
 
+local catppuccin = {
+	'catppuccin/nvim',
+	name = 'catppuccin',
+	config = function()
+		vim.cmd('colorscheme catppuccin-mocha')
+	end
+}
+
 local gruvbox = {
 	'ellisonleao/gruvbox.nvim',
 	name = 'gruvbox',
@@ -22,4 +30,4 @@ local tokyonight = {
 	end
 }
 
-return rosepine
+return catppuccin
