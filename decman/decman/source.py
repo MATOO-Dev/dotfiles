@@ -6,6 +6,7 @@ decman.packages += [
         # 'nerd-fonts',
         'amd-ucode',
         'ark',
+        'bacon',
         'base',
         'base-devel',
         'bluetui',
@@ -27,6 +28,7 @@ decman.packages += [
         'linux-firmware',
         'linux-headers',
         'linux-lts',
+        'linux-lts-headers',
         'ly',
         'man-db',
         'neofetch',
@@ -46,6 +48,7 @@ decman.packages += [
         'ttf-font-awesome',
         'uwsm',
         'vim',
+        'zellij',
 ]
 
 # Desktop Only
@@ -137,16 +140,17 @@ decman.packages += [
 ]
 
 decman.aur_packages += [
+        # 'footage', -- broken, use flatpak instead
         'anki-bin',
         'anyrun-git',
         'bazecor',
         'betterdiscordctl',
         'denaro',
         'discover-overlay',
-        # 'footage', -- broken, use flatpak instead
         'gpu-screen-recorder-gtk',
         'heroic-games-launcher-bin',
         'hyprshot',
+        'librewolf-bin',
         'localsend-bin',
         'numbat',
         'onlyoffice-bin',

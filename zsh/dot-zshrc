@@ -1,5 +1,6 @@
 # Environment variables
 EDITOR=nvim
+XDG_CACHE_DIR=~/.cache
 
 # Aliases
 alias ls='ls --color'

@@ -14,12 +14,12 @@ require 'mason-lspconfig'.setup {
 }
 
 require 'mason-lspconfig'.setup_handlers {
-	function (servername)
+	function(servername)
 		local settings = {}
 		if servers[servername] ~= nil then
 			settings = servers[servername]['settings']
 		end
-		require ('lspconfig')[servername].setup {
+		require('lspconfig')[servername].setup {
 			autostart = true,
 			settings = settings,
 			capabilities = capabilities,

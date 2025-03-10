@@ -51,6 +51,7 @@ truncation_symbol = "../"
 "Documents" = "󰈙 "
 "Repos" = " "
 "Dotfiles" = " "
+"Rust" = " ust"
 
 [git_branch]
 disabled = false

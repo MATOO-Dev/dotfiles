@@ -36,3 +36,6 @@ vim.keymap.set('n', '<c-p>', '":<c-u>" .. v:count1 .. "bprev<cr>"', { expr = tru
 
 -- cycle through quickfix list without focus
 vim.keymap.set('n', '<a-n>', '<cmd>cnext<cr>', { desc = 'Go to next quickfix item' })
+
+-- lsp actions
+vim.keymap.set('n', '<f2>', vim.lsp.buf.rename, { desc = 'Rename symbol' })
