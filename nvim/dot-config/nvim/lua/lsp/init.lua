@@ -13,6 +13,7 @@ require 'mason-lspconfig'.setup {
 	ensure_installed = vim.tbl_keys(servers),
 }
 
+-- automatic lsp installation could be achieved using lazy-lsp.nvim
 require 'mason-lspconfig'.setup_handlers {
 	function(servername)
 		local settings = {}
@@ -26,4 +27,7 @@ require 'mason-lspconfig'.setup_handlers {
 			on_attach = on_attach,
 		}
 	end,
+	-- ["gdscript"] = function()
+	--		require 'gscript'.setup {}
+	-- end,
 }

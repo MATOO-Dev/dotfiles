@@ -1,6 +1,7 @@
 # Environment variables
 EDITOR=nvim
 XDG_CACHE_DIR=~/.cache
+PATH=$PATH:~/.cargo/bin
 
 # Aliases
 alias ls='ls --color'

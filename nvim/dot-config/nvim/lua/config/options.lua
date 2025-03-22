@@ -45,7 +45,7 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 -- minimum cursor distance to top/bottom when scrolling (unless BOF/EOF)
-vim.opt.scrolloff = 15
+vim.opt.scrolloff = 5
 
 -- always show sign column
 vim.opt.signcolumn = "yes"

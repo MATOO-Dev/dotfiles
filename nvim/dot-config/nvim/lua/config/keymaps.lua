@@ -12,6 +12,10 @@ vim.keymap.set('n', '<c-b>', '<c-b>zz', { desc = 'Page Backward' })
 vim.keymap.set('n', 'n', 'nzz', { desc = 'Next Match' })
 vim.keymap.set('n', 'N', 'Nzz', { desc = 'Previous Match' })
 
+--keep the screen centered when going back/forwards through cursor locations
+vim.keymap.set('n', '<c-i>', '<c-i>zz', { desc = 'Next Cursor Location' })
+vim.keymap.set('n', '<c-o>', '<c-o>zz', { desc = 'Previous Cursor Location' })
+
 -- keep the screen centered when going to EOF
 vim.keymap.set('n', 'G', 'Gzz', { desc = 'Goto EOF' })
 
