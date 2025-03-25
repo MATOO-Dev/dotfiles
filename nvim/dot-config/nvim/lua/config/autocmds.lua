@@ -12,3 +12,16 @@ vim.cmd('autocmd BufReadPost *.md setlocal wrap')
 
 -- automatically open typst preview
 vim.cmd('autocmd BufReadPost *.typ TypstPreview')
+
+-- automatically connect to godothost server
+vim.api.nvim_create_autocmd({ "BufReadPost" }, {
+	desc = "Connect to godothost",
+	pattern = { "*.gd", "*.gdshader", "*.tscn", "*.tres" },
+	callback = function()
+		local project_file = vim.fn.getcwd() .. '/project.godot'
+		if project_file then
+			vim.fn.serverstart './godothost'
+			print("Connected to godothost")
+		end
+	end,
+})

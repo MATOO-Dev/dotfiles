@@ -27,7 +27,10 @@ require 'mason-lspconfig'.setup_handlers {
 			on_attach = on_attach,
 		}
 	end,
-	-- ["gdscript"] = function()
-	--		require 'gscript'.setup {}
-	-- end,
+}
+
+require 'lspconfig'.gdscript.setup {
+	autostart = true,
+	capabilities = capabilities,
+	on_attach = on_attach,
 }
