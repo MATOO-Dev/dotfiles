@@ -5,10 +5,6 @@ local on_attach = function(client, bufnr)
 	-- todo
 end
 
-vim.diagnostic.config {
-	update_in_insert = true,
-}
-
 require 'mason-lspconfig'.setup {
 	ensure_installed = vim.tbl_keys(servers),
 }
@@ -29,8 +25,5 @@ require 'mason-lspconfig'.setup_handlers {
 	end,
 }
 
-require 'lspconfig'.gdscript.setup {
-	autostart = true,
-	capabilities = capabilities,
-	on_attach = on_attach,
-}
+require 'lspconfig'.gdscript.setup {}
+require 'lspconfig'.gdshader_lsp.setup {}
