@@ -25,6 +25,10 @@ vim.opt.foldcolumn = "0"
 vim.opt.foldenable = true
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.lsp.foldexpr()"
+vim.o.foldtext = ""
+vim.opt.fillchars:append({fold = " "})
 
 -- dont show insert/visual/etc mode, deferred to status bar plugin
 vim.opt.showmode = false
