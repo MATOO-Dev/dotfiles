@@ -4,10 +4,10 @@
   "IS_MAXIMIZED": false,
   "IS_MINIMIZED": false,
   "WINDOW_BOUNDS": {
-    "x": 2560,
-    "y": 37,
-    "width": 2560,
-    "height": 1402
+    "x": 0,
+    "y": 60,
+    "width": 2256,
+    "height": 1444
   },
   "DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true,
   "MIN_WIDTH": 940,
