@@ -78,7 +78,8 @@
         "alias": "",
         "type": "command",
         "args": {"commands": {
-            "Color Picker": {"icon": "colorgrab", "exec": "hyprpicker -a &", "search_string": "colorpicker"}
+            "Color Picker": {"icon": "colorgrab", "exec": "hyprpicker -a &", "search_string": "colorpicker"},
+			"Screenshot": {"icon": "colorgrab", "exec": "hyprshot -m region &", "search_string": "screenshot" }
         }},
         "priority": 5
     },
