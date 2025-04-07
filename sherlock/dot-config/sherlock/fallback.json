@@ -113,9 +113,14 @@
         "async": true, 
         "args": {"icon": "wikipedia", "exec": "/home/basti/.config/sherlock/scripts/sherlock-wiki", "exec-args": "'{keyword}'"},
         "priority": 0 
+    },
+    {
+        "name": "Godot Docs Search",
+        "display_name": "Godot Docs Search",
+        "tag_start": "{keyword}",
+        "alias": "gd",
+        "type": "web_launcher",
+		"args": {"search_engine": "https://docs.godotengine.org/en/stable/search.html?q={keyword}", "icon": "sherlock-youtube"},
+        "priority": 0
     }
 ]
-
-
-
-
