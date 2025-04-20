@@ -9,6 +9,7 @@ return {
 			formatters_by_ft = {
 				cpp = { 'clang-format' },
 				rust = { 'rustfmt' },
+				gdscript = { 'gdformat' },
 				conform = {},
 			},
 		}

@@ -79,7 +79,8 @@
         "type": "command",
         "args": {"commands": {
             "Color Picker": {"icon": "colorgrab", "exec": "hyprpicker -a &", "search_string": "colorpicker"},
-			"Screenshot": {"icon": "colorgrab", "exec": "hyprshot -m region &", "search_string": "screenshot" }
+			"Screenshot": {"icon": "colorgrab", "exec": "hyprshot -m region &", "search_string": "screenshot" },
+			"Private Firefox": {"icon": "colorgrab", "exec": "firefox --private-window", "search_string": "private"}
         }},
         "priority": 5
     },

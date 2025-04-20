@@ -14,9 +14,9 @@ vim.cmd('autocmd BufReadPost *.md setlocal wrap')
 vim.cmd('autocmd BufReadPost *.typ TypstPreview')
 
 -- automatically connect to godothost server
-vim.api.nvim_create_autocmd({ "BufReadPost" }, {
-	desc = "Connect to godothost",
-	pattern = { "*.gd", "*.gdshader", "*.tscn", "*.tres" },
+vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
+	desc = 'Connect to godothost',
+	pattern = { '*.gd', '*.gdshader', '*.tscn', '*.tres' },
 	callback = function()
 		local project_file = vim.fn.getcwd() .. '/project.godot'
 		if project_file then
