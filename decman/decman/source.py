@@ -41,6 +41,7 @@ decman.packages += [
     'noto-fonts-emoji',
     'noto-fonts-extra',
     'openssh',
+    'os-prober',
     'pipewire',
     'pipewire-alsa',
     'pipewire-pulse',
