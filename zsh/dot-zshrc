@@ -9,6 +9,9 @@ alias nv=nvim
 alias laz=lazygit
 alias open=xdg-open
 alias clear="printf '\033[2J\033[3J\033[1;1H'" #clear the scrollback buffer aswell
+alias rm=rmtrash
+alias rmdir=rmdirtrash
+alias sudo='sudo ' # allows following commands to also be aliased
 
 # History settings
 HISTFILE=~/.zsh_history
