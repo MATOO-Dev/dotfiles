@@ -13,6 +13,9 @@ vim.cmd('autocmd BufReadPost *.md setlocal wrap')
 -- automatically open typst preview
 vim.cmd('autocmd BufReadPost *.typ TypstPreview')
 
+-- dont hide symbols in json
+vim.cmd('autocmd BufReadPost *.json* setlocal conceallevel=0')
+
 -- automatically connect to godothost server
 GDConnected = false
 vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
