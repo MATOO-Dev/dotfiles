@@ -7,9 +7,9 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+		"tray",
         "pulseaudio",
         "idle_inhibitor",
-		"tray",
     ],
     "modules-center": [
 		"hyprland/workspaces",
@@ -24,9 +24,9 @@
     // Modules configuration
     "hyprland/workspaces": {
         "disable-scroll": true,
-        "all-outputs": true,
+        "all-outputs": false,
         "warp-on-scroll": false,
-		"active-only": true,
+		"active-only": false,
 		"persistent-workspaces": {
 			"DP-3": [1, 2, 3, 4, 5],
 			"DP-2": [6, 7, 8, 9, 10],
@@ -36,8 +36,8 @@
 		"format-icons": {
 			"default": "",
 			"active": "",
-            "urgent": "",
-		}
+			"urgent": "",
+		},
     },
     "keyboard-state": {
         "numlock": true,
