@@ -7,18 +7,18 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-		"tray",
         "pulseaudio",
+        "power-profiles-daemon",
+        "backlight",
+		"network",
         "idle_inhibitor",
     ],
     "modules-center": [
 		"hyprland/workspaces",
     ],
     "modules-right": [
-        "network",
-        "power-profiles-daemon",
-        "backlight",
-        "battery",
+		"battery",
+		"tray",
         "clock",
     ],
     // Modules configuration
@@ -173,7 +173,7 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-ethernet": "Eth ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
