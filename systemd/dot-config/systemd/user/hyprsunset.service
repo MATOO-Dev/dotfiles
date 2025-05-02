@@ -1,0 +1,9 @@
+[Unit]
+Description=Enable blue light filter at 21:00
+
+[Service]
+Type=oneshot
+ExecStart=hyprctl hyprsunset temperature 2500
+
+[Install]
+WantedBy=graphical.target

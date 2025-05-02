@@ -1,0 +1,9 @@
+[Unit]
+Description=Enable blue light filter at 21:00
+
+[Timer]
+OnCalendar=*-*-* 12:19:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

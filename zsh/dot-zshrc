@@ -1,9 +1,11 @@
 # Environment variables
 EDITOR=nvim
+VISUAL=nvim
 XDG_CACHE_DIR=~/.cache
 PATH=$PATH:~/.cargo/bin
 
 # Aliases
+alias vi=nvim
 alias ls='ls --color'
 alias nv=nvim
 alias laz=lazygit
