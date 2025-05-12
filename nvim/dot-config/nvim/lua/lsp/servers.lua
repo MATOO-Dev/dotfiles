@@ -29,4 +29,6 @@ return {
 	texlab = {},
 
 	tinymist = {},
+
+	nil_ls = {},
 }

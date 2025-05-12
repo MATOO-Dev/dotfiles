@@ -10,6 +10,8 @@ return {
 				cpp = { 'clang-format' },
 				rust = { 'rustfmt' },
 				gdscript = { 'gdformat' },
+				typescript = { 'deno_fmt' },
+				nix = { 'nixfmt' },
 				conform = {},
 			},
 		}
