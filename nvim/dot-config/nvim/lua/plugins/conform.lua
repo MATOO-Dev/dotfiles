@@ -14,6 +14,12 @@ return {
 				nix = { 'nixfmt' },
 				conform = {},
 			},
+			formatters = {
+				['clang-format'] = {
+					command = 'clang-format',
+					prepend_args = { '-style={ColumnLimit: 0}' }
+				},
+			},
 		}
 	},
 	{
