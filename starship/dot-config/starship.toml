@@ -46,7 +46,7 @@ truncation_length = 1
 truncation_symbol = "../"
 
 [directory.substitutions]
-"~" = " "
+"~" = " "
 "Downloads" = " "
 "Documents" = "󰈙 "
 "Repos" = " "
