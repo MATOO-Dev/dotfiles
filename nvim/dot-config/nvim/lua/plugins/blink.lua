@@ -3,6 +3,7 @@ return {
 	version = '*',
 	dependencies = 'rafamadriz/friendly-snippets',
 	opts = {
-		keymap = { preset = 'default' },
+		keymap = { preset = 'super-tab' },
+		completion = { list = { selection = { auto_insert = false, } } },
 	}
 }

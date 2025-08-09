@@ -17,7 +17,7 @@ return {
 			formatters = {
 				['clang-format'] = {
 					command = 'clang-format',
-					prepend_args = { '-style={ColumnLimit: 0}' }
+					prepend_args = { '-style={ColumnLimit: 0, IndentWidth: 4, TabWidth: 4}' }
 				},
 			},
 		}
