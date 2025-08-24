@@ -14,6 +14,7 @@ return {
 			dap = false,
 			templates = {
 				-- 'builtin',
+				'user.make',
 				'user.c_compile',
 				'user.c_compile_run',
 				'user.c_debug',

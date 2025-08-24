@@ -12,6 +12,7 @@ return {
 				gdscript = { 'gdformat' },
 				typescript = { 'deno_fmt' },
 				nix = { 'nixfmt' },
+				toml = { 'taplo' },
 				conform = {},
 			},
 			formatters = {
