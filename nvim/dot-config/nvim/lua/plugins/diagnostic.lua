@@ -1,3 +1,6 @@
+-- toggle between inline and expanded diagnostics
+vim.keymap.set("n", "<leader>ti", function() require("tiny-inline-diagnostic").toggle() vim.diagnostic.config({ virtual_lines = not vim.diagnostic.config().virtual_lines }) end, { desc = "Toggle diagnostic lines" })
+
 return {
 	'rachartier/tiny-inline-diagnostic.nvim',
 	lazy = false,
