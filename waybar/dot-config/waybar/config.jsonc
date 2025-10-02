@@ -28,8 +28,8 @@
         "warp-on-scroll": false,
 		"active-only": false,
 		"persistent-workspaces": {
-			"DP-3": [1, 2, 3, 4, 5],
-			"DP-2": [6, 7, 8, 9, 10],
+			"DP-2": [1, 2, 3, 4, 5],
+			"DP-3": [6, 7, 8, 9, 10],
 			"eDP-1": [1, 2, 3, 4, 5]
 		},
 		"ignored-workspaces": {
