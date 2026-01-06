@@ -2,17 +2,18 @@ return {
 	generator = function ()
 		-- search upwards from the current file for a Sconstruct file
 		-- if none was found, dont show this template
-		local project_root = vim.fs.root(vim.fn.expand('%:p'), 'SConstruct')
+		local project_root = vim.fs.root(0, 'SConstruct')
 		if project_root == nil then
-			return false, "No Sconstruct file found"
+			return 'No Sconstruct file found'
 		end
 
-		local template = {
+		local template =  {
 			name = 'scons_compile',
 			desc = 'Scons: compile for linux',
 			builder = function ()
 				return {
 					cmd = 'scons',
+					-- cwd = project_root,
 					cwd = project_root,
 					args = { 'platform=linux', 'compiledb=yes', 'arch=x86_64' },
 					components = {
@@ -21,10 +22,12 @@ return {
 					}
 				}
 			end,
-			condition = {
-				filetype = 'cpp',
-			},
 		}
+
 		return { template }
-	end
+	end,
+
+	condition = {
+		filetype = 'cpp',
+	},
 }
