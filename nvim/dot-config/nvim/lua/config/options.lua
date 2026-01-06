@@ -54,8 +54,8 @@ vim.opt.scrolloff = 5
 -- always show sign column
 vim.opt.signcolumn = "yes"
 
--- show bat at n chars to indicate long lines
--- vim.opt.colorcolumn = "81"
+-- show bar at n chars to indicate long lines
+vim.opt.colorcolumn = "81"
 
 -- enable @ in file names
 vim.opt.isfname:append('@-@')
