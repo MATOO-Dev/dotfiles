@@ -8,7 +8,7 @@ return {
 		end
 
 		local template =  {
-			name = 'scons_compile',
+			name = '0) scons_compile',
 			desc = 'Scons: compile for linux',
 			builder = function ()
 				return {
