@@ -1,12 +1,13 @@
 # Environment variables
-EDITOR=nvim
-VISUAL=nvim
+EDITOR=nv
+VISUAL=nv
 XDG_CACHE_DIR=~/.cache
 PATH=$PATH:~/.cargo/bin
 
 # Aliases
 alias ls='ls --color'
-alias nv=nvim
+# alias nv=nvim
+alias nv=~/Repos/nixcats-test/result/bin/nv
 alias laz=lazygit
 alias open=xdg-open
 alias clear="printf '\033[2J\033[3J\033[1;1H'" #clear the scrollback buffer aswell
