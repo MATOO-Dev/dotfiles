@@ -1,0 +1,68 @@
+///////////////////
+/// LAYER RULES ///
+///////////////////
+
+overview {
+	zoom 0.9
+	// backdrop-color "#777777"
+}
+
+// hide borders and rounded corners if a single window is visible
+
+// block notifications from screenshare
+layer-rule {
+	match namespace="^notifications$"
+	// block-out-from "screencast" 
+	block-out-from "screen-capture"
+}
+
+////////////////////
+/// WINDOW RULES ///
+////////////////////
+
+// ask windows to disable client side decorations
+// also tells them that they are tiled
+prefer-no-csd
+
+// general rules for all windows
+window-rule {
+	// rounded corners
+	geometry-corner-radius 10
+	// disable/cut off client side shadows etc
+	clip-to-geometry true
+}
+
+// float these windows
+window-rule {
+	// float steam popups
+	match app-id="steam" title="Friends List"
+	// float godot games launched from editor
+	match title=".+ (DEBUG)"
+
+	open-floating true
+}
+
+// change default column width for these windows to 1
+window-rule {
+	match app-id="firefox"
+	match app-id="steam" title="Steam"
+	match app-id="Godot"
+
+	default-column-width { proportion 1.0; }
+}
+
+// float, disable rounding and border
+window-rule {
+	match title="org.kde.kruler"
+
+	open-floating true
+	border {
+		off
+	}
+}
+
+// // open firefox picture-in-picture as floating
+// window-rule {
+//     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+//     open-floating true
+// }

@@ -1,0 +1,30 @@
+/////////////
+/// INPUT ///
+/////////////
+
+input {
+    keyboard {
+        xkb {
+			layout "eu"
+			// vairant "colemak_dh_ortho"
+        }
+    }
+
+	warp-mouse-to-focus
+	focus-follows-mouse
+
+    mouse {
+        accel-profile "flat"
+    }
+
+    touchpad {
+        tap
+        accel-profile "flat"
+    }
+}
+
+cursor {
+	xcursor-size 24
+	// hide-when-typing
+	// hide-after-inactive-ms 0
+}

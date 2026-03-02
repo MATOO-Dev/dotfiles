@@ -62,3 +62,9 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# automatically load ssh key for github
+# if [ -z "$SSH_AUTH_SOCK" ]; then
+# 	eval $(ssh-agent -s)
+# 	ssh-add ~/.ssh/id_ed25519
+# fi

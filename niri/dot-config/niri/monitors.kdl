@@ -1,0 +1,27 @@
+////////////////
+/// MONITORS ///
+////////////////
+
+output "DP-2" {
+	mode "2560x1440"
+	scale 1.2
+	position x=0 y=0
+	variable-refresh-rate
+	focus-at-startup
+	hot-corners { 
+		off
+	}
+}
+
+output "DP-3" {
+	mode "2560x1440"
+	scale 1.2
+	// position uses logical, scaled pixels instead of physical pixels
+	// therefore, offset is resolution / scale
+	position x=-2133 y=0
+	variable-refresh-rate
+	hot-corners {
+		off
+	}
+}
+

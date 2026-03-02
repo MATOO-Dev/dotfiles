@@ -1,0 +1,8 @@
+include "monitors.kdl"
+include "autostart.kdl"
+include "environment.kdl"
+include "layout.kdl"
+include "input.kdl"
+include "binds.kdl"
+include "windowrules.kdl"
+

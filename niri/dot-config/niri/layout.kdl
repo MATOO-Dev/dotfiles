@@ -1,0 +1,53 @@
+//////////////
+/// LAYOUT ///
+//////////////
+
+layout {
+	// in logical pixels
+	// drawn on each side
+    gaps 10
+	// offset on each side
+	// negative values means reverting the gaps
+	// this leaves gaps only between windows
+	// make this smaller than gaps so the focus ring has space
+	struts {
+		left -5
+		right -5
+		top -5
+		bottom -5
+	}
+
+    center-focused-column "never"
+	// always-center-single-column
+
+    // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+		proportion 1.0
+    }
+
+    default-column-width { proportion 0.5; }
+
+    focus-ring {
+        width 3
+        active-gradient from="#33ccffee" to="#00ff99ee" angle=135
+        inactive-color "#595959aa"
+    }
+
+    shadow {
+		on
+        spread 4
+		softness 3
+        offset x=0 y=5
+        color "#1a1a1aee"
+		draw-behind-window true
+    }
+}
+
+animations {
+	window-open {
+		curve "cubic-bezier" 0.23 1 0.32 1
+	}
+}
