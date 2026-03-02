@@ -11,7 +11,7 @@ input {
     }
 
 	warp-mouse-to-focus
-	focus-follows-mouse
+	// focus-follows-mouse max-scroll-amount="60%"
 
     mouse {
         accel-profile "flat"

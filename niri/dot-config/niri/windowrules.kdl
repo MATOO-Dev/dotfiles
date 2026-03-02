@@ -34,35 +34,76 @@ window-rule {
 
 // float these windows
 window-rule {
-	// float steam popups
-	match app-id="steam" title="Friends List"
 	// float godot games launched from editor
 	match title=".+ (DEBUG)"
+	// gpu screen recorder ui
+	match app-id="gsr-ui"
+	// learnopengl projects
+	match title="LearnOpenGL"
 
 	open-floating true
+	open-fullscreen false
+	opacity 0.5
 }
 
 // change default column width for these windows to 1
 window-rule {
-	match app-id="firefox"
+	// match app-id="firefox"
+	// main steam window
 	match app-id="steam" title="Steam"
-	match app-id="Godot"
+	// main godot window
+	match app-id="Godot" title=".*Godot Engine"
 
 	default-column-width { proportion 1.0; }
 }
 
-// float, disable rounding and border
+// float, disable rounding focus ring border for these windows
 window-rule {
-	match title="org.kde.kruler"
+	match app-id="org.kde.kruler"
+    match app-id="firefox" title="Picture-in-Picture"
 
 	open-floating true
-	border {
+	geometry-corner-radius 0
+	focus-ring {
 		off
 	}
 }
 
-// // open firefox picture-in-picture as floating
-// window-rule {
-//     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-//     open-floating true
-// }
+// fullscreen these windows
+window-rule {
+	match app-id="Minecraft.*"
+
+	open-fullscreen true
+}
+
+// tile these float-by-default windows
+window-rule {
+	match app-id="steam" title="Friends List"
+	match app-id="steam" title="Sign in to Steam"
+	match app-id="steam" title="Shutdown"
+	match app-id="discord" title="Discord Updater"
+
+	open-floating false
+	default-window-height { proportion 1.0; }
+}
+
+// place these popups in the top right corner
+window-rule {
+	match title="gsr notify"
+	match app-id="steam" title="notificationtoasts_\\d+_desktop"
+	// todo: figure out title for steam now playing popup
+
+	default-floating-position x=-65 y=10 relative-to="top-right"
+	open-focused false
+}
+
+// make urgent popups floating with red-orange border
+window-rule {
+	match is-urgent=true
+
+	open-floating true
+	open-focused true
+	focus-ring {
+        active-gradient from="#FF0000FF" to="#FF7700FF" angle=135
+	}
+}
