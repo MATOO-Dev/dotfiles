@@ -43,7 +43,6 @@ window-rule {
 
 	open-floating true
 	open-fullscreen false
-	opacity 0.5
 }
 
 // change default column width for these windows to 1
@@ -53,8 +52,11 @@ window-rule {
 	match app-id="steam" title="Steam"
 	// main godot window
 	match app-id="Godot" title=".*Godot Engine"
+	// videos
+	match app-id="vlc"
 
 	default-column-width { proportion 1.0; }
+	default-window-height { proportion 1.0; }
 }
 
 // float, disable rounding focus ring border for these windows
@@ -92,6 +94,7 @@ window-rule {
 	match title="gsr notify"
 	match app-id="steam" title="notificationtoasts_\\d+_desktop"
 	// todo: figure out title for steam now playing popup
+	// apparently its the same as for normal notifications
 
 	default-floating-position x=-65 y=10 relative-to="top-right"
 	open-focused false
