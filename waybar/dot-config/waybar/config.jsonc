@@ -10,16 +10,16 @@
         "pulseaudio",
         "power-profiles-daemon",
         "backlight",
-		"network",
-        "idle_inhibitor",
     ],
     "modules-center": [
+		"idle_inhibitor",
+		"clock",
 		"hyprland/workspaces",
     ],
     "modules-right": [
 		"battery",
 		"tray",
-        "clock",
+		"network",
     ],
     // Modules configuration
     "hyprland/workspaces": {
