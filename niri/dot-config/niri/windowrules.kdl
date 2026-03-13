@@ -32,7 +32,7 @@ window-rule {
 	clip-to-geometry true
 }
 
-// float these windows
+// float these windows in the center
 window-rule {
 	// float godot games launched from editor
 	match title=".+ (DEBUG)"
@@ -45,6 +45,18 @@ window-rule {
 	open-fullscreen false
 }
 
+// gsr-ui refuses to float by itself, see corresponding script in binds.kdl
+window-rule {
+	match app-id="gsr-ui"
+
+	default-floating-position x=0 y=-35 relative-to="top-left"
+	open-floating true
+	geometry-corner-radius 0
+	focus-ring {
+		off
+	}
+}
+
 // change default column width for these windows to 1
 window-rule {
 	// match app-id="firefox"
@@ -54,7 +66,7 @@ window-rule {
 	match app-id="Godot" title=".*Godot Engine"
 	// videos
 	match app-id="vlc"
-
+ 
 	default-column-width { proportion 1.0; }
 	default-window-height { proportion 1.0; }
 }

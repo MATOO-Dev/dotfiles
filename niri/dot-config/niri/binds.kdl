@@ -14,6 +14,18 @@ binds {
     Mod+Q hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+R hotkey-overlay-title="Run an Application: fuzzel" { spawn "sherlock"; }
 	Ctrl+Shift+Escape { spawn "missioncenter"; }
+	Alt+Z { spawn-sh r#"
+		SECONDS=0
+		while [[ 2 -gt $SECONDS ]]; do
+		if niri msg windows | grep 'App ID: "gsr-ui"' > /dev/null; then
+			niri msg action move-window-to-floating
+			niri msg action set-window-width 2560
+			niri msg action set-window-height 1440
+			exit
+		fi
+		done
+		"#;
+	}
 
 	/////////////////
 	// screenshots //
