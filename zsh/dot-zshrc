@@ -8,6 +8,7 @@ PATH=$PATH:~/.cargo/bin
 alias ls='ls --color'
 # alias nv=nvim
 alias nv=~/Repos/nixcats-test/result/bin/nv
+# alias nv=nix run ~/Repos/den-config#nvim-full --
 alias laz=lazygit
 alias open=xdg-open
 alias clear="printf '\033[2J\033[3J\033[1;1H'" #clear the scrollback buffer aswell

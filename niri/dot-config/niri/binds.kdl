@@ -12,7 +12,7 @@ binds {
 	// run programs //
 	//////////////////
     Mod+Q hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+R hotkey-overlay-title="Run an Application: hamr" { spawn "hamr" "toggle"; }
+    Mod+R hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
 	Ctrl+Shift+Escape { spawn "missioncenter"; }
 	Alt+Z { spawn-sh r#"
 		SECONDS=0
