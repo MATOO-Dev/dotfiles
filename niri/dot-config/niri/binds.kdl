@@ -14,6 +14,8 @@ binds {
     Mod+Q hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+R hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
     Mod+N hotkey-overlay-title="Run an Application: nautilus" { spawn "nautilus"; }
+    Mod+Pause hotkey-overlay-title="GSR: Save replay" { spawn-sh "killall -SIGUSR1 gpu-screen-recorder && sleep 0.5 && notify-send -t 1500 -u low -- \"GPU Screen Recorder\" \"Replay saved\""; }
+
 	Ctrl+Shift+Escape { spawn "missioncenter"; }
 	Alt+Z { spawn-sh r#"
 		SECONDS=0
