@@ -73,10 +73,11 @@ window-rule {
 	default-window-height { proportion 1.0; }
 }
 
-// float, disable rounding focus ring border for these windows
+// float, disable rounding and focus ring border for these windows
 window-rule {
 	match app-id="org.kde.kruler"
     match app-id="firefox" title="Picture-in-Picture"
+	match app-id=".*-Exercise-.*"
 
 	open-floating true
 	geometry-corner-radius 0

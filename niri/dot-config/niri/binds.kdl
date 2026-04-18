@@ -49,7 +49,7 @@ binds {
 	////////////////////////
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
-	Mod+Shift+P { power-off-monitors; }
+	// Mod+Shift+P { power-off-monitors; }
 
 	/////////////////////
 	// window controls //
