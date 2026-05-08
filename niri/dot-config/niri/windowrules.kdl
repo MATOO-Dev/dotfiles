@@ -40,6 +40,8 @@ window-rule {
 	match app-id="gsr-ui"
 	// learnopengl projects
 	match title="LearnOpenGL"
+	// uni computer graphics projects
+	match title=".* -  (.* fps)"
 
 	open-floating true
 	open-fullscreen false
@@ -125,3 +127,12 @@ window-rule {
         active-gradient from="#FF0000FF" to="#FF7700FF" angle=135
 	}
 }
+
+window-rule {
+	match app-id="kitty"
+	match app-id="org.gnome.Nautilus"
+	background-effect {
+		blur true
+	}
+}
+
